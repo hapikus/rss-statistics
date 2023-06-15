@@ -1,0 +1,11 @@
+.logoCont {
+  filter: invert(100%) sepia(0%) saturate(12%) hue-rotate(297deg) brightness(105%) contrast(105%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 16px 0;
+}
+
+.menuTitleLink {
+  color: inherit;
+}
