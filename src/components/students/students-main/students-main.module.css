@@ -1,4 +1,22 @@
 /* 420px size */
 .liquidPlotContainer {
-    max-width: 800px; 
+  width: 220px;
+}
+
+.barPlotContainer {
+  width: 350px;
+}
+
+.countryContainer {
+  width: 550px;
+}
+
+
+.mainPlotContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  text-align: center;
 }

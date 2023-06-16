@@ -1,6 +1,6 @@
 import React from "react";
 import { observer } from "mobx-react-lite";
-import { Liquid } from '@ant-design/plots';
+import { Liquid, Bar, Pie } from '@ant-design/plots';
 import { Typography } from 'antd';
 
 import rssStatisticsData from '../../../stores/RssStatisticsData';
@@ -8,55 +8,94 @@ import styles from './students-main.module.css'
 
 const { Title } = Typography;
 
+// percent: rssStatisticsData.studentsStatus.isActive / rssStatisticsData.studentsTotal,
 const ActiveLiquid = () => {
   const config = {
     percent: rssStatisticsData.studentsStatus.isActive / rssStatisticsData.studentsTotal,
-    shape: (x: any, y: any, width: any, height: any): any => {
-      const path = [];
-      const w = Math.min(width, height);
-
-      for (let i = 0; i < 5; i++) {
-        path.push([
-          i === 0 ? 'M' : 'L',
-          (Math.cos(((18 + i * 72) * Math.PI) / 180) * w) / 2 + x,
-          (-Math.sin(((18 + i * 72) * Math.PI) / 180) * w) / 2 + y,
-        ]);
-        path.push([
-          'L',
-          (Math.cos(((54 + i * 72) * Math.PI) / 180) * w) / 4 + x,
-          (-Math.sin(((54 + i * 72) * Math.PI) / 180) * w) / 4 + y,
-        ]);
-      }
-
-      path.push(['Z']);
-      return path;
-    },
+    shape: 'rect',
     outline: {
       border: 2,
       distance: 4,
-      style: {
-        stroke: '#FFC100',
-        strokeOpacity: 0.65,
-      },
     },
     wave: {
       length: 128,
-    },
-    theme: {
-      styleSheet: {
-        brandColor: '#FAAD14',
-      },
     },
   };
   return <Liquid {...config} />;
 };
 
+const GenderBar = (): any => {
+  const { studentsGender } = rssStatisticsData;
+  const data: {name: string, value: number}[] = [];
+  for (let key of Object.keys(studentsGender)) {
+    if (studentsGender.hasOwnProperty(key)) {
+      data.push({
+        name: key,
+        value: studentsGender[key],
+      })
+    }
+  }
+  const config: any = {
+    data,
+    xField: 'value',
+    yField: 'name',
+    seriesField: 'name',
+    legend: {
+      position: 'top-left',
+    },
+  };
+  return <Bar {...config} />;
+};
+
+const CountryPie = (): any => {
+  const { studentsCountry } = rssStatisticsData;
+  const data: any = [];
+  studentsCountry.forEach((country) => {
+    data.push({
+      countryName: country[0],
+      value: country[1],
+    })
+  })
+  const config = {
+    appendPadding: 10,
+    data,
+    angleField: 'value',
+    colorField: 'countryName',
+    radius: 0.75,
+    label: {
+      type: 'spider',
+      labelHeight: 24,
+      content: '{name}\n{percentage}',
+    },
+    interactions: [
+      {
+        type: 'element-selected',
+      },
+      {
+        type: 'element-active',
+      },
+    ],
+  };
+  return <Pie {...config} />;
+};
+
 const StudentsMain = () => {
   return (
   <>
-    <Title level={2}>Active students</Title>
-    <div className={styles.liquidPlotContainer}>
-      {ActiveLiquid()}
+    <Title className={styles.title} level={2}>Students</Title>
+    <div className={styles.mainPlotContainer}>
+      <div className={styles.liquidPlotContainer}>
+      <Title className={styles.title} level={4}>Active students</Title>
+        {ActiveLiquid()}
+      </div>
+      <div className={styles.barPlotContainer}>
+      <Title className={styles.title} level={4}>Gender guess</Title>
+        {GenderBar()}
+      </div>
+      <div className={styles.countryContainer}>
+      <Title className={styles.title} level={4}>Country</Title>
+        {CountryPie()}
+      </div>
     </div>
   </>
   );
