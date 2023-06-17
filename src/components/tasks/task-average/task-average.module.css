@@ -1,0 +1,14 @@
+.selectCountry {
+  width: 165px;
+}
+
+.optionContainer {
+  display: flex;
+  column-gap: 30px;
+  padding-bottom: 10px;
+}
+
+.title {
+  margin-top: 5px;
+  text-align: center;
+}

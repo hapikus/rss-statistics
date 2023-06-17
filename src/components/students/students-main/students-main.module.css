@@ -17,6 +17,12 @@
   justify-content: space-between;
 }
 
-.title {
+.titleMain {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.titleSecond {
+  margin-top: 10px;
   text-align: center;
 }

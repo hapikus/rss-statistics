@@ -53,19 +53,16 @@
     "Lipetsk": 9,
     "Ekaterinburg": 31,
     "Kirov": 10,
-    "Ulyanovsk": 5,
     "Togliatti": 14,
     "Tomsk": 12,
     "Tyumen": 23,
     "Makhachkala": 7,
     "Yaroslavl": 15,
-    "Belgorod": 6,
     "Novosibirsk": 49,
     "Saratov": 23,
     "Khabarovsk": 13,
     "Tula": 8,
     "Chelyabinsk": 23,
-    "Yoshkar-Ola": 5,
     "Russia": 110,
     "Sankt Petersburg": 14,
     "Izhevsk": 35,
@@ -74,27 +71,19 @@
     "Ryazan": 12,
     "Taganrog": 7,
     "Москва": 20,
-    "Orel": 6,
-    "Arkhangelsk": 6,
     "Нижний Новгород": 7,
     "Tambov": 7,
     "Kaluga": 9,
     "Irkutsk": 17,
-    "Екатеринбург": 5,
     "Naberezhnye Chelny": 8,
     "Stavropol": 9,
-    "Astrakhan": 5,
     "Orenburg": 10,
     "Kursk": 7,
     "Sochi": 10,
-    "Elista": 6,
     "Россия": 13,
     "Yakutsk": 9,
     "Tver": 7,
-    "Saransk": 5,
-    "Краснодар": 5,
     "Magnitogorsk": 9,
-    "Самара": 5,
     "Grozny": 12
   },
   "Ukraine": {
@@ -113,13 +102,10 @@
     "Odesa": 25,
     "Ivano-Frankivsk": 8,
     "Khmelnytskyi": 9,
-    "Chernivtsi": 6,
     "Vinnytsia": 9,
     "Ódessa": 12,
     "Cherkasy": 7,
-    "Ternopil": 6,
-    "Харьков": 7,
-    "Kharkov": 6
+    "Харьков": 7
   },
   "Kazakhstan": {
     "Astana": 101,
@@ -129,51 +115,30 @@
     "Shymkent": 8,
     "Aktau": 7,
     "Kazakhstan": 38,
-    "Aktobe": 5,
     "Uralsk": 11,
-    "Petropavlovsk": 5,
     "Atyrau": 11,
     "Kostanay": 7,
-    "Nur-Sultan": 17,
-    "Казахстан": 6,
-    "Алматы": 6
+    "Nur-Sultan": 17
   },
   "Poland": {
     "Warsaw": 80,
-    "Gdynia": 5,
     "Wrocław": 51,
     "Gdańsk": 45,
-    "Katowice": 6,
     "Łódź": 13,
     "Poznań": 36,
     "Warszawa": 54,
     "Białystok": 25,
-    "Kraków": 61,
-    "Szczecin": 5
+    "Kraków": 61
   },
   "Uzbekistan": {
     "Fergana": 9,
     "Tashkent": 193,
-    "Bukhara": 6,
     "Uzbekistan": 22,
     "Toshkent": 7,
-    "Ташкент": 5,
-    "Urgench": 5,
     "Uzbekiston": 7
   },
   "Georgia": {
     "Tbilisi": 115,
     "Batumi": 89
-  },
-  "Kyrgyzstan": {
-    "Bishkek": 142,
-    "Osh": 8
-  },
-  "Germany": {
-    "Berlin": 24,
-    "Düsseldorf": 5
-  },
-  "USA": {
-    "New York": 8
   }
 }

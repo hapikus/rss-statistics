@@ -1,4 +1,14 @@
-/* 420px size */
 .selectCountry {
-    width: 120px;
-  }
+  width: 120px;
+}
+
+.optionContainer {
+  display: flex;
+  column-gap: 30px;
+  padding-bottom: 10px;
+}
+
+.title {
+  margin-top: 5px;
+  text-align: center;
+}

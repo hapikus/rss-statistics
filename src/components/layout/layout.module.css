@@ -9,3 +9,8 @@
 .menuTitleLink {
   color: inherit;
 }
+
+.title {
+  text-align: center;
+  margin: 13px auto;
+}

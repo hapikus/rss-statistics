@@ -1,14 +1,16 @@
-import {readFile} from "./fileOperation.mjs";
+import {readFile, saveFile} from "./fileOperation.mjs";
 
-function getName(content) {
+export function createStudentsNameList(content) {
   const studentsName = new Set();
   content.forEach((student) => {
     studentsName.add(student.name.split(' ')[0]);
   });
-  return studentsName
+  saveFile('students/student-name.csv', Array.from(studentsName).join('\n'));
 }
-// const studentName = getName();
-// saveFile('students/student-name.csv', Array.from(studentName).join('\n'));
+
+export function studentsConst(content) {
+  console.log('studentsTotal', content.length);
+}
 
 export function checkGender(content) {
   const genderGuess = readFile('students/gender-guess.json')
@@ -50,7 +52,6 @@ function cityFilter(countryObj, minStudentsFromCity) {
     }
     newCountryObj[country] = temp;
   }
-  console.log('newCountryObj', newCountryObj)
   return newCountryObj
 }
 
@@ -71,6 +72,5 @@ export function cityCounter(content, counrtyNumber, minStudentsFromCity) {
       countryObj[studentCountry][studentCity] = (currentNumber || 0) + 1;
     }
   })
-  const filtredCountrObj = cityFilter(countryObj, minStudentsFromCity);
-  return filtredCountrObj
+  return cityFilter(countryObj, minStudentsFromCity)
 }

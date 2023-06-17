@@ -1,17 +1,19 @@
 import React from "react";
 import { observer } from "mobx-react-lite";
-import { Select } from 'antd';
+import { Select, Typography } from 'antd';
 import { CirclePacking } from '@ant-design/plots';
 
-import rssStatisticsData from '../../../stores/RssStatisticsData';
+import store from '../../../stores/RssStatisticsData';
 import styles from './students-geography.module.css'
 
 function sortFunction(a: [string, number], b: [string, number]): number {
   return b[1] - a[1];
 }
 
+const { Title } = Typography;
+
 function getSelectOptions() {
-  const {studentsCity} = rssStatisticsData;
+  const {studentsCity} = store;
   const countryOptions: [string, number][] = [];
   for (let country of Object.keys(studentsCity)) {
     const countryPeople = Object.values(studentsCity[country])
@@ -29,26 +31,40 @@ function getSelectOptions() {
   return options
 }
 
-const onChange = (value: string) => {
-  rssStatisticsData.setStudentsGeographySelected(value);
+const selectOnChange = (value: string) => {
+  store.setStudentsGeographySelected(value);
 };
 
-const onSearch = (value: string) => {
+const selectOnSearch = (value: string) => {
   console.log('search:', value);
 };
 
-const cityCirclePacking = (): any => {
-  const cityObj = rssStatisticsData.studentsCity;
-  const countrySelect = rssStatisticsData.studentsGeographySelected;
-  console.log('11.11', rssStatisticsData.studentsGeographySelected);
+const CityCirclePacking = (): any => {
+  const cityObj = store.studentsCity;
+  const countryObj = store.studentsCountry;
+  const countrySelect = store.studentsGeographySelected;
+  let totalPeopleInCircle  = 0;
+  let totalCitizen = 0
+  countryObj.forEach((country) => {
+    if (country[0] === countrySelect) {
+      totalCitizen = Number(country[1]);
+    }
+  })  
   const data: {name: string, children: {name: string, value: number}[]} = {
     "name": 'City',
     "children": []
   };
   for (let city of Object.keys(cityObj[countrySelect])) {
+    totalPeopleInCircle += cityObj[countrySelect][city];
     data['children'].push({
       'name': city,
       'value': cityObj[countrySelect][city],
+    })
+  }
+  if (totalCitizen) {
+    data['children'].push({
+      'name': 'Other',
+      'value': totalCitizen - totalPeopleInCircle,
     })
   }
   const config: any = {
@@ -76,20 +92,21 @@ const cityCirclePacking = (): any => {
 
 const StudentsGeography = () => {
   const optionsSelect = getSelectOptions();
-  if (rssStatisticsData.studentsGeographySelected === '') {
-    rssStatisticsData.setStudentsGeographySelected(optionsSelect[0].label);
+  if (store.studentsGeographySelected === '') {
+    store.setStudentsGeographySelected(optionsSelect[0].label);
   }
   return (
   <>
-    <div>
+    <Title className={styles.title} level={2}>Country and City</Title>
+    <div className={styles.optionContainer}>
       <Select
         className={styles.selectCountry}
         showSearch
         placeholder="Select a country"
         optionFilterProp="children"
         defaultValue={optionsSelect[0].label}
-        onChange={onChange}
-        onSearch={onSearch}
+        onChange={selectOnChange}
+        onSearch={selectOnSearch}
         filterOption={(input, option) =>
           (option?.label ?? "").toLowerCase().includes(input.toLowerCase())
         }
@@ -97,7 +114,7 @@ const StudentsGeography = () => {
       />
     </div>
     <div>
-      {cityCirclePacking()}
+      {CityCirclePacking()}
     </div>
   </>
   );

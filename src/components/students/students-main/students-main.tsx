@@ -3,15 +3,14 @@ import { observer } from "mobx-react-lite";
 import { Liquid, Bar, Pie } from '@ant-design/plots';
 import { Typography } from 'antd';
 
-import rssStatisticsData from '../../../stores/RssStatisticsData';
+import store from '../../../stores/RssStatisticsData';
 import styles from './students-main.module.css'
 
 const { Title } = Typography;
 
-// percent: rssStatisticsData.studentsStatus.isActive / rssStatisticsData.studentsTotal,
 const ActiveLiquid = () => {
   const config = {
-    percent: rssStatisticsData.studentsStatus.isActive / rssStatisticsData.studentsTotal,
+    percent: store.studentsStatus.isActive / store.studentsTotal,
     shape: 'rect',
     outline: {
       border: 2,
@@ -25,7 +24,7 @@ const ActiveLiquid = () => {
 };
 
 const GenderBar = (): any => {
-  const { studentsGender } = rssStatisticsData;
+  const { studentsGender } = store;
   const data: {name: string, value: number}[] = [];
   for (let key of Object.keys(studentsGender)) {
     if (studentsGender.hasOwnProperty(key)) {
@@ -40,21 +39,25 @@ const GenderBar = (): any => {
     xField: 'value',
     yField: 'name',
     seriesField: 'name',
-    legend: {
-      position: 'top-left',
-    },
+    legend: false,
   };
   return <Bar {...config} />;
 };
 
 const CountryPie = (): any => {
-  const { studentsCountry } = rssStatisticsData;
+  const { studentsCountry, studentsTotal } = store;
   const data: any = [];
+  let totalInCountrys = 0;
   studentsCountry.forEach((country) => {
+    totalInCountrys += Number(country[1]);
     data.push({
       countryName: country[0],
       value: country[1],
     })
+  })
+  data.push({
+    countryName: 'Other',
+    value: studentsTotal - totalInCountrys,
   })
   const config = {
     appendPadding: 10,
@@ -82,18 +85,18 @@ const CountryPie = (): any => {
 const StudentsMain = () => {
   return (
   <>
-    <Title className={styles.title} level={2}>Students</Title>
+    <Title className={styles.titleMain} level={2}>Students</Title>
     <div className={styles.mainPlotContainer}>
       <div className={styles.liquidPlotContainer}>
-      <Title className={styles.title} level={4}>Active students</Title>
+      <Title className={styles.titleSecond} level={4}>Active students</Title>
         {ActiveLiquid()}
       </div>
       <div className={styles.barPlotContainer}>
-      <Title className={styles.title} level={4}>Gender guess</Title>
+      <Title className={styles.titleSecond} level={4}>Gender guess</Title>
         {GenderBar()}
       </div>
       <div className={styles.countryContainer}>
-      <Title className={styles.title} level={4}>Country</Title>
+      <Title className={styles.titleSecond} level={4}>Country</Title>
         {CountryPie()}
       </div>
     </div>
