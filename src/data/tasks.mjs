@@ -1,28 +1,16 @@
 import {saveFile} from './fileOperation.mjs'
 
-// {
-//   "id": 2382,
-//   "name": "RSS Test",
-//   "startDate": "2023-03-05T00:00:00.000Z",
-//   "endDate": "2023-03-27T23:59:00.000Z",
-//   "maxScore": 100,
-//   "scoreWeight": 0.1,
-//   "organizer": { "id": 606, "name": "Irina Inina", "githubId": "irinainina" },
-//   "status": "done",
-//   "score": 100,
-//   "tag": "test",
-//   "descriptionUrl": "https://github.com/rolling-scopes-school/tasks/tree/master/stage0/modules/rs-school-intro",
-//   "type": "courseTask"
-// },
-
 function tags(data) {
-  const tagsMap = new Map();
+  const tagsMap = {};
   data.forEach((task) => {
     if (task.tag) {
-      tagsMap.set(task.tag, (tagsMap.get(task.tag) || 0) + 1);
+      if (!tagsMap.hasOwnProperty(task.tag)) {
+        tagsMap[task.tag] = 0
+      }
+      tagsMap[task.tag] += 1;
     }
   });
-  console.log(Array.from(tagsMap));
+  saveFile('../../public/data/tasksTag.json', JSON.stringify(tagsMap, null, 2));
 }
 
 function peopleInTask(schedule, students) {
@@ -67,10 +55,10 @@ function peopleInTask(schedule, students) {
     task.totalPeople = totalPeople;
     task.averageScore = totalScore / totalPeople;
   })
-  saveFile('tasks/tasks.json', JSON.stringify(tasksList, null, 2));
+  saveFile('../../public/data/tasks.json', JSON.stringify(tasksList, null, 2));
 }
 
 export function tasksConst(schedule, students) {
-  // tags(schedule);
+  tags(schedule);
   peopleInTask(schedule, students);
 }

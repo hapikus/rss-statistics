@@ -5,20 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cde9390b-717c-4d1b-b548-5e80d32f68d3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../components/layout/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../components/layout/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../components/layout/layout.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/../components/layout/layout.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../components/students/students-geography/students-geography.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/../components/students/students-geography/students-geography.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../components/mentors/mentors-main/mentors-main.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/../components/mentors/mentors-main/mentors-main.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../components/mentors/mentors-main/mentors-main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../components/mentors/mentors-main/mentors-main.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../components/mentors/mentors-students-overview/mentors-students-overview.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/../components/mentors/mentors-students-overview/mentors-students-overview.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../components/mentors/mentors-students-overview/mentors-students-overview.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../components/mentors/mentors-students-overview/mentors-students-overview.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../components/students/students-geography/students-geography.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../components/students/students-geography/students-geography.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../components/students/students-main/students-main.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/../components/students/students-main/students-main.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../components/students/students-main/students-main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../components/students/students-main/students-main.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../components/tasks/task-average/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../components/tasks/task-average/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../components/tasks/task-average/task-average.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/../components/tasks/task-average/task-average.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../components/tasks/tasks-main/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../components/tasks/tasks-main/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../components/tasks/task-individual/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../components/tasks/task-individual/task-individual.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/data.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/split-all-data.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/split-all-data.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/students.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/students.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/students/gender-guess.json" beforeDir="false" afterPath="$PROJECT_DIR$/students/gender-guess.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/students/student-city.json" beforeDir="false" afterPath="$PROJECT_DIR$/students/student-city.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tasks.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/tasks.mjs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../stores/RssStatisticsData.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../stores/RssStatisticsData.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -99,6 +102,9 @@
       <workItem from="1686946645211" duration="14000" />
       <workItem from="1686988044724" duration="10521000" />
       <workItem from="1687013684419" duration="381000" />
+      <workItem from="1687076415518" duration="1227000" />
+      <workItem from="1687095594841" duration="3691000" />
+      <workItem from="1687111629102" duration="4025000" />
     </task>
     <servers />
   </component>

@@ -1,36 +1,20 @@
 import React from "react";
 import { observer } from "mobx-react-lite";
-import { Radio, Select, Typography } from 'antd';
-import { Mix } from '@ant-design/plots';
+import { Radio, Select, Typography } from "antd";
+import { Mix } from "@ant-design/plots";
 
-import store from '../../../stores/RssStatisticsData';
-import styles from './task-average.module.css'
+import store from "../../../stores/RssStatisticsData";
+import styles from "./task-average.module.css";
 
-import type { RadioChangeEvent } from 'antd';
+import type { RadioChangeEvent } from "antd";
 const { Title } = Typography;
-const {tasksArr} = store;
-
-function getSelectionOptions() {
-  const options: {value: string, label: string}[] = [];
-  const optionSet = new Set();
-  tasksArr.forEach((task) => {
-    if (!optionSet.has(task.tag) && !task.tag.includes('submit')) {
-      options.push({
-        value: task.tag,
-        label: task.tag,
-      })
-    }
-    optionSet.add(task.tag);    
-  })
-  return options;
-}
 
 const selectOnChange = (value: string) => {
   store.setTasksAverageSelectedTag(value);
 };
 
 const selectOnSearch = (value: string) => {
-  console.log('selectOnSearch:', value);
+  console.log("selectOnSearch:", value);
 };
 
 const handleWeightChange = (e: RadioChangeEvent) => {
@@ -40,15 +24,20 @@ const handleWeightChange = (e: RadioChangeEvent) => {
 const AverageAndMaxPlot = () => {
   const data: any[] = [];
   let maxValue = -Infinity;
-  const weightOpt = store.tasksAverageSelectedWeight === 'without Weight';
-  tasksArr.forEach((task) => {
+  const weightOpt = store.tasksAverageSelectedWeight === "without Weight";
+  store.taskJson.forEach((task: any) => {
     if (task.tag === store.tasksAverageSelectedTag) {
       data.push({
         date: task.name,
-        averageScore: weightOpt ? task.averageScore.toFixed(0) : (task.averageScore * task.scoreWeight).toFixed(0),
+        averageScore: weightOpt
+          ? task.averageScore.toFixed(0)
+          : (task.averageScore * task.scoreWeight).toFixed(0),
         maxScore: weightOpt ? task.maxScore : task.maxScore * task.scoreWeight,
       });
-      maxValue = Math.max(weightOpt ? task.maxScore : task.maxScore * task.scoreWeight, maxValue) 
+      maxValue = Math.max(
+        weightOpt ? task.maxScore : task.maxScore * task.scoreWeight,
+        maxValue
+      );
     }
   });
 
@@ -60,13 +49,13 @@ const AverageAndMaxPlot = () => {
     syncViewPadding: true,
     plots: [
       {
-        type: 'column',
+        type: "column",
         options: {
           data,
-          xField: 'date',
-          yField: 'averageScore',
+          xField: "date",
+          yField: "averageScore",
           yAxis: {
-            type: 'linear',
+            type: "linear",
             max: maxValue + maxValue * 0.01,
           },
           meta: {
@@ -74,23 +63,23 @@ const AverageAndMaxPlot = () => {
               sync: true,
             },
             value: {
-              alias: 'Average score',
+              alias: "Average score",
             },
           },
           label: {
-            position: 'middle',
+            position: "middle",
           },
         },
       },
       {
-        type: 'line',
+        type: "line",
         options: {
           data,
-          xField: 'date',
-          yField: 'maxScore',
+          xField: "date",
+          yField: "maxScore",
           xAxis: false,
           yAxis: {
-            type: 'linear',
+            type: "linear",
             max: maxValue + maxValue * 0.01,
           },
           label: {
@@ -98,17 +87,17 @@ const AverageAndMaxPlot = () => {
           },
           meta: {
             count: {
-              alias: 'Max score',
+              alias: "Max score",
             },
           },
-          color: '#FF6B3B',
+          color: "#FF6B3B",
           annotations: data.map((d: any) => {
             return {
-              type: 'dataMarker',
+              type: "dataMarker",
               position: { date: d.date, value: d.count },
               point: {
                 style: {
-                  stroke: '#FF6B3B',
+                  stroke: "#FF6B3B",
                   lineWidth: 1.5,
                 },
               },
@@ -123,34 +112,40 @@ const AverageAndMaxPlot = () => {
 };
 
 const TasksAverage = () => {
-  const optionsSelect: any = getSelectionOptions();
+  if (store.taskJson === undefined || store.optionsTaskTag === undefined) {
+    return <div>Loading...</div>; // Render a loading state if taskJson is null
+  }
+  const optionsSelectTag: any = store.optionsTaskTag;
   return (
     <>
-      <Title className={styles.title} level={2}>Average Score</Title>
+      <Title className={styles.title} level={2}>
+        Average Score
+      </Title>
       <div className={styles.optionContainer}>
         <Select
-          className={styles.selectCountry}
+          className={styles.selectTag}
           showSearch
           placeholder="Select a type"
           optionFilterProp="children"
-          defaultValue={optionsSelect[0].label}
+          defaultValue={optionsSelectTag[0].label}
           onChange={selectOnChange}
           onSearch={selectOnSearch}
           filterOption={(input: any, option: any) =>
             (option?.label ?? "").toLowerCase().includes(input.toLowerCase())
           }
-          options={optionsSelect}
+          options={optionsSelectTag}
         />
-        <Radio.Group value={store.tasksAverageSelectedWeight} onChange={handleWeightChange}>
+        <Radio.Group
+          value={store.tasksAverageSelectedWeight}
+          onChange={handleWeightChange}
+        >
           <Radio.Button value="without Weight">without Weight</Radio.Button>
           <Radio.Button value="with Weight">with Weight</Radio.Button>
         </Radio.Group>
       </div>
-      <div>
-        {AverageAndMaxPlot()}
-      </div>
+      <div>{AverageAndMaxPlot()}</div>
     </>
-    );
+  );
 };
 
 export default observer(TasksAverage);

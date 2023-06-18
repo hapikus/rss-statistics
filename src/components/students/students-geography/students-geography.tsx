@@ -12,7 +12,7 @@ function sortFunction(a: [string, number], b: [string, number]): number {
 
 const { Title } = Typography;
 
-function getSelectOptions() {
+function getSelectOptionsCountry() {
   const {studentsCity} = store;
   const countryOptions: [string, number][] = [];
   for (let country of Object.keys(studentsCity)) {
@@ -91,7 +91,7 @@ const CityCirclePacking = (): any => {
 };
 
 const StudentsGeography = () => {
-  const optionsSelect = getSelectOptions();
+  const optionsSelect = getSelectOptionsCountry();
   if (store.studentsGeographySelected === '') {
     store.setStudentsGeographySelected(optionsSelect[0].label);
   }

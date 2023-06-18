@@ -1,9 +1,11 @@
 import {readFile, saveFile} from './fileOperation.mjs';
 import {checkGender, countCountry, cityCounter, studentsConst, createStudentsNameList} from './students.mjs';
-import {tasksConst} from './tasks.mjs'
+import {tasksConst} from './tasks.mjs';
+import {mentorInfo} from './metors.mjs';
 
 const studentData = readFile('all-students.json').content
 const scheduleData = readFile('schedule.json')
+
 
 // studentsConst(studentData);
 
@@ -22,3 +24,4 @@ const scheduleData = readFile('schedule.json')
 // saveFile('students/student-city.json', JSON.stringify(cityObj, null, 2));
 
 tasksConst(scheduleData, studentData)
+mentorInfo(studentData, scheduleData)

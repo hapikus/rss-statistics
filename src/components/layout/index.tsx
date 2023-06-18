@@ -58,7 +58,7 @@ const items: MenuItem[] = [
     getItem(<Link to="/tasks-main">Overview</Link>, "4", <BarsOutlined />),
     getItem(<Link to="/task-average">Average</Link>, "5", <LineChartOutlined />),
     getItem(
-      <Link to="/task-individual">Individual</Link>,
+      <Link to="/task-score">Score</Link>,
       "6",
       <UserOutlined />
     ),
