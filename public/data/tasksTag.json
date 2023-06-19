@@ -1,9 +1,30 @@
-{
-  "test": 35,
-  "lecture": 10,
-  "coding": 14,
-  "self-study": 68,
-  "cross-check-submit": 12,
-  "cross-check-review": 12,
-  "interview": 1
-}
+[
+  [
+    "self-study",
+    68
+  ],
+  [
+    "test",
+    35
+  ],
+  [
+    "coding",
+    14
+  ],
+  [
+    "cross-check-submit",
+    12
+  ],
+  [
+    "cross-check-review",
+    12
+  ],
+  [
+    "lecture",
+    10
+  ],
+  [
+    "interview",
+    1
+  ]
+]

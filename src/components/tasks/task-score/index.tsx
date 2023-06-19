@@ -66,12 +66,8 @@ const DistributionColumn = () => {
 };
 
 const TasksScore = () => {
-  if (
-    store.taskJson === undefined ||
-    store.optionsTaskTag === undefined ||
-    store.optionsTaskList === undefined
-  ) {
-    return <div>Loading...</div>; // Render a loading state if taskJson is null
+  if (store.isLoad === false) {
+    return <div>Loading...</div>;
   }
   const optionsSelectTag: any = store.optionsTaskTag;
   const optionsSelectTask: any = store.optionsTaskList;

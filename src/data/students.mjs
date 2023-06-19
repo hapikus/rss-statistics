@@ -1,6 +1,27 @@
 import {readFile, saveFile} from "./fileOperation.mjs";
 
-export function createStudentsNameList(content) {
+function countrySort(a, b) {
+  return b[1] - a[1];
+}
+
+function studentsConst(studentData, NumberOfTheTopCountry = 7, minimumPeopleFromCity = 7) {
+  const studentsConstJson = {}
+  const isActiveObj = checkActive(studentData);
+  const genderObj = checkGender(studentData);
+  const studentsCountryObj = countryCount(studentData, NumberOfTheTopCountry);
+  const studentsCityObj = cityCounter(studentData, studentsCountryObj, minimumPeopleFromCity)
+
+  studentsConstJson['studentsTotal'] = studentData.length || 0;
+  studentsConstJson['studentsStatus'] = isActiveObj;
+  studentsConstJson['studentsGender'] = genderObj;
+  studentsConstJson['studentsCountry'] = studentsCountryObj;
+  studentsConstJson['studentsCity'] = studentsCityObj;
+
+  saveFile('../../public/data/studentConst.json', JSON.stringify(studentsConstJson, null, 2));
+}
+
+// students/student-name.csv
+function createStudentsNameList(content) {
   const studentsName = new Set();
   content.forEach((student) => {
     studentsName.add(student.name.split(' ')[0]);
@@ -8,14 +29,23 @@ export function createStudentsNameList(content) {
   saveFile('students/student-name.csv', Array.from(studentsName).join('\n'));
 }
 
-export function studentsConst(content) {
-  console.log('studentsTotal', content.length);
+// studentsStatus
+function checkActive(studentData) {
+  const active = {
+    "isActive": 0,
+    "notActive": 0
+  }
+  studentData.forEach((student) => {
+    student.isActive ? active.isActive += 1 : active.notActive += 1
+  })
+  return active;
 }
 
-export function checkGender(content) {
+// studentsGender
+function checkGender(studentData) {
   const genderGuess = readFile('students/gender-guess.json')
   const genderObj = {}
-  content.forEach((student) => {
+  studentData.forEach((student) => {
     const studentName = student.name.split(' ')[0];
     const genderPredict = genderGuess[studentName] || 'Unknown';
     genderObj[genderPredict] = (genderObj[genderPredict] || 0) + 1;
@@ -23,11 +53,8 @@ export function checkGender(content) {
   return genderObj
 }
 
-function countrySort(a, b) {
-  return b[1] - a[1];
-}
-
-export function countCountry(content, elements) {
+// studentsCountry
+function countryCount(content, NumberOfTheTopCountry) {
   const countryCounter = {};
   content.forEach((student) => {
     const countryName = student['countryName'];
@@ -38,7 +65,7 @@ export function countCountry(content, elements) {
     sortable.push([country, countryCounter[country]]);
   }
   sortable.sort(countrySort);
-  return sortable.slice(0, elements)
+  return sortable.slice(0, NumberOfTheTopCountry)
 }
 
 function cityFilter(countryObj, minStudentsFromCity) {
@@ -55,12 +82,11 @@ function cityFilter(countryObj, minStudentsFromCity) {
   return newCountryObj
 }
 
-export function cityCounter(content, counrtyNumber, minStudentsFromCity) {
-  const countrylist = countCountry(content, counrtyNumber);
+function cityCounter(content, countrylist, minStudentsFromCity) {
+  const countryObj = {};
   const countryFilter = countrylist.map((country) => {
     return country[0]
   })
-  const countryObj = {};
   countryFilter.forEach((country) => {
     countryObj[country] = {};
   })
@@ -73,4 +99,10 @@ export function cityCounter(content, counrtyNumber, minStudentsFromCity) {
     }
   })
   return cityFilter(countryObj, minStudentsFromCity)
+}
+
+export function studentsInfo(studentData, scheduleData, NumberOfTheTopCountry, minimumPeopleFromCity) {
+  // createStudentsNameList(studentData) // 'students/student-name.csv'
+  studentsConst(studentData, NumberOfTheTopCountry, minimumPeopleFromCity);
+  // studentsJson(studentData);
 }

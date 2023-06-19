@@ -48,7 +48,7 @@ const CountryPie = (): any => {
   const { studentsCountry, studentsTotal } = store;
   const data: any = [];
   let totalInCountrys = 0;
-  studentsCountry.forEach((country) => {
+  studentsCountry.forEach((country: any) => {
     totalInCountrys += Number(country[1]);
     data.push({
       countryName: country[0],
@@ -83,6 +83,9 @@ const CountryPie = (): any => {
 };
 
 const StudentsMain = () => {
+  if (store.isLoad === false) {
+    return <div>Loading...</div>;
+  }
   return (
   <>
     <Title className={styles.titleMain} level={2}>Students</Title>

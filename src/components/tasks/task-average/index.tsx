@@ -23,24 +23,38 @@ const handleWeightChange = (e: RadioChangeEvent) => {
 
 const AverageAndMaxPlot = () => {
   const data: any[] = [];
-  let maxValue = -Infinity;
+  let maxTaskScore = -Infinity;
+  let minAverageScore = Infinity;
+  const taskScoreMap = new Map();
   const weightOpt = store.tasksAverageSelectedWeight === "without Weight";
   store.taskJson.forEach((task: any) => {
     if (task.tag === store.tasksAverageSelectedTag) {
       data.push({
-        date: task.name,
+        name: task.name,
         averageScore: weightOpt
           ? task.averageScore.toFixed(0)
           : (task.averageScore * task.scoreWeight).toFixed(0),
         maxScore: weightOpt ? task.maxScore : task.maxScore * task.scoreWeight,
       });
-      maxValue = Math.max(
+      maxTaskScore = Math.max(
         weightOpt ? task.maxScore : task.maxScore * task.scoreWeight,
-        maxValue
+        maxTaskScore
+      );
+      minAverageScore = Math.min(
+        weightOpt
+          ? task.averageScore.toFixed(0)
+          : (task.averageScore * task.scoreWeight).toFixed(0),
+        minAverageScore
+      );
+      taskScoreMap.set(
+        task.name, weightOpt
+        ? task.averageScore.toFixed(0)
+        : (task.averageScore * task.scoreWeight).toFixed(0)
       );
     }
   });
-
+  const paletteSemanticRed = '#F4664A';
+  const brandColor = '#5B8FF9';
   const config: any = {
     appendPadding: 8,
     tooltip: {
@@ -52,11 +66,17 @@ const AverageAndMaxPlot = () => {
         type: "column",
         options: {
           data,
-          xField: "date",
+          xField: "name",
           yField: "averageScore",
           yAxis: {
             type: "linear",
-            max: maxValue + maxValue * 0.01,
+            max: maxTaskScore + maxTaskScore * 0.01,
+          },
+          color: (data: any) => {
+            if (taskScoreMap.get(data.name) <= minAverageScore * 1.05) {
+              return paletteSemanticRed;
+            }      
+            return brandColor;
           },
           meta: {
             date: {
@@ -75,12 +95,12 @@ const AverageAndMaxPlot = () => {
         type: "line",
         options: {
           data,
-          xField: "date",
+          xField: "name",
           yField: "maxScore",
           xAxis: false,
           yAxis: {
             type: "linear",
-            max: maxValue + maxValue * 0.01,
+            max: maxTaskScore + maxTaskScore * 0.01,
           },
           label: {
             offsetY: -8,
@@ -112,8 +132,8 @@ const AverageAndMaxPlot = () => {
 };
 
 const TasksAverage = () => {
-  if (store.taskJson === undefined || store.optionsTaskTag === undefined) {
-    return <div>Loading...</div>; // Render a loading state if taskJson is null
+  if (store.isLoad === false) {
+    return <div>Loading...</div>;
   }
   const optionsSelectTag: any = store.optionsTaskTag;
   return (

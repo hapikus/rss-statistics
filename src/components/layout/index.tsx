@@ -25,8 +25,8 @@ const { Title } = Typography;
 function getItem(
   label: React.ReactNode,
   key: React.Key,
-  icon?: React.ReactNode,
-  children?: MenuItem[]
+  icon?: any,
+  children?: any,
 ): MenuItem {
   return {
     key,

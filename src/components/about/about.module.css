@@ -1,0 +1,18 @@
+.title {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.contactInfoCont {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.aboutCont {
+  font-size: 18px;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}

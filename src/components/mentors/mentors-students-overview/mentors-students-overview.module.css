@@ -6,3 +6,13 @@
 .selectTag {
   width: 165px;
 }
+
+.selectName {
+  width: 300px;
+}
+
+.optionContainer {
+  display: flex;
+  column-gap: 30px;
+  padding-bottom: 20px;
+}

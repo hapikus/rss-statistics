@@ -45,7 +45,7 @@ const CityCirclePacking = (): any => {
   const countrySelect = store.studentsGeographySelected;
   let totalPeopleInCircle  = 0;
   let totalCitizen = 0
-  countryObj.forEach((country) => {
+  countryObj.forEach((country: any) => {
     if (country[0] === countrySelect) {
       totalCitizen = Number(country[1]);
     }
@@ -91,6 +91,9 @@ const CityCirclePacking = (): any => {
 };
 
 const StudentsGeography = () => {
+  if (store.isLoad === false) {
+    return <div>Loading...</div>;
+  }
   const optionsSelect = getSelectOptionsCountry();
   if (store.studentsGeographySelected === '') {
     store.setStudentsGeographySelected(optionsSelect[0].label);

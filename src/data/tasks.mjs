@@ -1,5 +1,9 @@
 import {saveFile} from './fileOperation.mjs'
 
+function tagSort(a, b) {
+  return b[1] - a[1];
+}
+
 function tags(data) {
   const tagsMap = {};
   data.forEach((task) => {
@@ -10,10 +14,15 @@ function tags(data) {
       tagsMap[task.tag] += 1;
     }
   });
-  saveFile('../../public/data/tasksTag.json', JSON.stringify(tagsMap, null, 2));
+  const sortable = [];
+  for (let tag in tagsMap) {
+    sortable.push([tag, tagsMap[tag]]);
+  }
+  sortable.sort(tagSort);
+  saveFile('../../public/data/tasksTag.json', JSON.stringify(sortable, null, 2));
 }
 
-function peopleInTask(schedule, students) {
+function peopleInTask(students, schedule) {
   const tasksList = []
   schedule.forEach((task) => {
     if (task.status === 'done' && task.maxScore) {
@@ -58,7 +67,7 @@ function peopleInTask(schedule, students) {
   saveFile('../../public/data/tasks.json', JSON.stringify(tasksList, null, 2));
 }
 
-export function tasksConst(schedule, students) {
+export function tasksInfo(students, schedule) {
   tags(schedule);
-  peopleInTask(schedule, students);
+  peopleInTask(students, schedule);
 }

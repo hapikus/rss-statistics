@@ -1,6 +1,6 @@
 import {saveFile} from "./fileOperation.mjs";
 
-export function mentorInfo(students, schedule) {
+export function mentorJson(students) {
   const mentors = {}
   students.forEach((student) => {
     if (student?.mentor) {
@@ -14,4 +14,8 @@ export function mentorInfo(students, schedule) {
     }
   })
   saveFile('../../public/data/mentors.json', JSON.stringify(mentors, null));
+}
+
+export function mentorsInfo(students, schedule) {
+  mentorJson(students)
 }
