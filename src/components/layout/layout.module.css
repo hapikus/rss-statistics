@@ -14,3 +14,18 @@
   text-align: center;
   margin: 13px auto;
 }
+
+.headerCont {
+  display: flex;
+}
+
+.lastUpdateCont {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.lastUpdateText {
+  font-size: 16px;
+  margin-right: 20px;
+}

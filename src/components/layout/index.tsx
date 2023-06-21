@@ -1,7 +1,7 @@
 import React from "react";
 import type { MenuProps } from "antd";
 
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, Link, useLocation } from "react-router-dom";
 import { 
   PieChartOutlined,
   QuestionCircleOutlined,
@@ -84,7 +84,21 @@ const items: MenuItem[] = [
   getItem(<Link to="/about">About</Link>, "10", <InfoCircleOutlined />),
 ];
 
+const pathKey: any = {
+  '/': ['1', ''],
+  '/students-main': ['2', 'sub1'],
+  '/students-geography': ['3', 'sub1'],
+  '/tasks-main': ['4', 'sub2'],
+  '/task-average': ['5', 'sub2'],
+  '/task-score': ['6', 'sub2'],
+  '/mentors-main': ['7', 'sub3'],
+  '/mentors-overview': ['8', 'sub3'],
+  '/faq': ['9', ''],
+  '/about': ['10', ''],
+}
+
 const Layout: React.FC = () => {
+  const location = useLocation();
   const [collapsed, setCollapsed] = useState(false);
   const {
     token: { colorBgContainer },
@@ -110,7 +124,8 @@ const Layout: React.FC = () => {
           </div>
           <Menu
             theme="dark"
-            defaultSelectedKeys={["1"]}
+            defaultSelectedKeys={[pathKey[location.pathname][0]]}
+            defaultOpenKeys={[pathKey[location.pathname][1]]}
             mode="inline"
             items={items}
           />
@@ -122,7 +137,11 @@ const Layout: React.FC = () => {
               background: colorBgContainer,
             }}
           >
-             <Title className={styles.title} level={2}>JSFE2023Q1</Title>
+            <div className={styles.headerCont}>
+              <Title className={styles.title} level={2}>JSFE2023Q1</Title>
+              <div className={styles.lastUpdateText}>Last update: 21.06.23</div>
+            </div>
+             
           </LayoutAntd.Header>
           <LayoutAntd.Content
             style={{

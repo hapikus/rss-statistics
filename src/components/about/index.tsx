@@ -50,6 +50,7 @@ const About = () => {
             Discord
           </a>
         </div>
+        <div>If you have any feedback or suggestions, please don't hesitate to reach out to me.</div>
       </div>
     </>
   );

@@ -73,7 +73,7 @@ function createDataMentorsStudents(): any {
   store.taskJson.forEach((task: any) => {
     if (task.tag === store.mentorStudentsSelectedTag) {
       const row: any = {};
-      row["rowKey"] = rowKey;
+      row["key"] = rowKey;
       row["taskname"] = task.name;
       row["averageScore"] = task.averageScore.toFixed(2);
       let count = 1;
@@ -91,6 +91,7 @@ function createDataMentorsStudents(): any {
         row[`student.name ${count}`] = studentScore;
         count += 1;
       }
+      rowKey += 1; 
       dataSource.push(row);
     }
   });
@@ -98,7 +99,6 @@ function createDataMentorsStudents(): any {
 }
 
 function getBackgroundColor(value: any, record: any) {
-  console.log("record", record);
   let maxInRow = -Infinity;
   let minInRow = Infinity;
   let rowKey: string;
@@ -150,7 +150,7 @@ const MentorsStudentsOverview = () => {
           showSearch
           placeholder="Select a type"
           optionFilterProp="children"
-          defaultValue={optionsSelectTag[0].label}
+          defaultValue={store.mentorStudentsSelectedTag}
           onChange={selectOnChangeTag}
           onSearch={selectOnSearchTag}
           filterOption={(input: any, option: any) =>
@@ -163,7 +163,7 @@ const MentorsStudentsOverview = () => {
           showSearch
           placeholder="Select a type"
           optionFilterProp="children"
-          defaultValue={optioonsSelectMentors[0].label}
+          defaultValue={store.mentorStudentsSelectedMentor}
           onChange={selectOnChangeMentor}
           onSearch={selectOnSearchMentor}
           filterOption={(input: any, option: any) =>

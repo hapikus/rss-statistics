@@ -26,6 +26,8 @@ const handlTaskChange = (e: RadioChangeEvent) => {
 
 const DistributionColumn = () => {
   const data: any = [];
+  let totalStudents: any = 0;
+  let columnsCount: any = 0;
   store.taskJson.forEach((task: any) => {
     if (task.name === store.tasksScoreSelectedTask) {
       for (let [key, value] of Object.entries(task.scoreObj)) {
@@ -33,9 +35,12 @@ const DistributionColumn = () => {
           score: key,
           students: value,
         })
+        totalStudents += value;
+        columnsCount += 1;
       }
     }
   }); 
+
   const config: any = {
     data,
     xField: 'score',
@@ -44,7 +49,14 @@ const DistributionColumn = () => {
       position: 'middle',
       style: {
         fill: '#FFFFFF',
-        opacity: 0.6,
+        opacity: 0.9,
+      },
+      formatter: (datum: any) => {
+        if (columnsCount < 22 && datum.students > 22) {
+          const percentage = ((datum.students / totalStudents) * 100).toFixed(1);
+          return `${datum.students}${'\n'}${percentage}%`;
+        }
+        return null;
       },
     },
     xAxis: {
@@ -53,12 +65,12 @@ const DistributionColumn = () => {
         autoRotate: false,
       },
     },
-    meta: {
-      type: {
-        alias: 'Score',
-      },
-      sales: {
-        alias: 'Students',
+    tooltip: {
+      formatter: (datum: any) => {
+        return {
+          name: 'Students',
+          value: `${datum.students} (${((datum.students / totalStudents) * 100).toFixed(2)}%)`,
+        };
       },
     },
   };

@@ -9,8 +9,12 @@ import styles from './students-main.module.css'
 const { Title } = Typography;
 
 const ActiveLiquid = () => {
+  let percent = 100;
+  if (store.studentsTotal !== undefined) {
+    percent = store.studentsStatus.isActive / store.studentsTotal;
+  }
   const config = {
-    percent: store.studentsStatus.isActive / store.studentsTotal,
+    percent,
     shape: 'rect',
     outline: {
       border: 2,
@@ -55,10 +59,12 @@ const CountryPie = (): any => {
       value: country[1],
     })
   })
-  data.push({
-    countryName: 'Other',
-    value: studentsTotal - totalInCountrys,
-  })
+  if (studentsTotal !== undefined) {
+    data.push({
+      countryName: 'Other',
+      value: studentsTotal - totalInCountrys,
+    })
+  }
   const config = {
     appendPadding: 10,
     data,

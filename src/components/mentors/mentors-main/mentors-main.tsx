@@ -47,6 +47,12 @@ const MentorsMainPie = () => {
     pieStyle: {
       lineWidth: 0,
     },
+    tooltip: {
+      formatter: (mentorm: any) => {
+        return { name: 'Students', value: `${mentorm.name}` }
+          // { name: 'Students', value: `${mentorm.value}` },
+      },
+    },
   };
   return <Pie {...config} />;
 };

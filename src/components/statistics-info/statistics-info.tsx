@@ -24,7 +24,7 @@ const StatisticMainCloud = () => {
     colorField: 'name',
     wordStyle: {
       fontFamily: 'Verdana',
-      fontSize: [16, 28],
+      fontSize: [16, 36],
     },
   };
 
