@@ -10,6 +10,7 @@ import About from "./components/about";
 
 import StudentsMain from "./components/students/students-main/students-main";
 import StudentsGeography from "./components/students/students-geography/students-geography";
+import StudentsPlaceHistory from "./components/students/students-place-history/students-place-history";
 
 import TasksMain from "./components/tasks/tasks-main";
 import TasksAverage from "./components/tasks/task-average";
@@ -26,6 +27,7 @@ function App() {
           <Route index element={<StatisticsInfo />} />
           <Route path="students-main" element={<StudentsMain />} />
           <Route path="students-geography" element={<StudentsGeography />} />
+          <Route path="students-place-history" element={<StudentsPlaceHistory />} />
           <Route path="tasks-main" element={<TasksMain />} />
           <Route path="task-average" element={<TasksAverage />} />
           <Route path="task-score" element={<TasksScore />} />

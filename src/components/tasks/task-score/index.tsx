@@ -98,7 +98,7 @@ const TasksScore = () => {
           showSearch
           placeholder="Select a type"
           optionFilterProp="children"
-          defaultValue={optionsSelectTag[0].label}
+          defaultValue={store.tasksScoreSelectedTag}
           onChange={selectOnChangeTag}
           onSearch={selectOnSearchTag}
           filterOption={(input: any, option: any) =>

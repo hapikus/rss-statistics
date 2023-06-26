@@ -2,6 +2,10 @@
   width: 165px;
 }
 
+.selectStudentGit {
+  width: 165px;
+}
+
 .optionContainer {
   display: flex;
   column-gap: 30px;

@@ -107,7 +107,7 @@ const StudentsGeography = () => {
         showSearch
         placeholder="Select a country"
         optionFilterProp="children"
-        defaultValue={optionsSelect[0].label}
+        defaultValue={store.studentsGeographySelected}
         onChange={selectOnChange}
         onSearch={selectOnSearch}
         filterOption={(input, option) =>

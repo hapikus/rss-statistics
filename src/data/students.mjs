@@ -4,7 +4,7 @@ function countrySort(a, b) {
   return b[1] - a[1];
 }
 
-function studentsConst(studentData, NumberOfTheTopCountry = 7, minimumPeopleFromCity = 7) {
+function getStudentConst(studentData, NumberOfTheTopCountry = 7, minimumPeopleFromCity = 7) {
   const studentsConstJson = {}
   const isActiveObj = checkActive(studentData);
   const genderObj = checkGender(studentData);
@@ -101,8 +101,98 @@ function cityCounter(content, countrylist, minStudentsFromCity) {
   return cityFilter(countryObj, minStudentsFromCity)
 }
 
+function getTaskList(scheduleData) {
+  const taskList = []
+  const currentTime = Date.now();
+  scheduleData.forEach((task) => {
+    const taskEndDate = new Date(task.endDate).getTime();
+    if (taskEndDate <= currentTime && task.maxScore && !task.tag.includes("submit")) {
+      taskList.push({
+        'id': task.id,
+        'scoreWeight': task.scoreWeight,
+        'name': task.name,
+        'endDate': taskEndDate
+      })
+    }
+  })
+  taskList.sort((a, b) => {
+    const dateA = new Date(a['endDate']);
+    const dateB = new Date(b['endDate']);
+    return dateA - dateB;
+  });
+  return taskList;
+}
+
+function addStudentsScoreAfterEachTask(studentData, taskList) {
+  studentData.forEach((student) => {
+      const studentsScoreAfterEachTask = [];
+      const studentsResults = student['taskResults'];
+      let studentScore = 0;
+      taskList.forEach((task) => {
+        for (let result of studentsResults) {
+          if (result['courseTaskId'] === task.id) {
+            studentScore += +result['score'] * +task['scoreWeight']
+            break
+          }
+        }
+        studentsScoreAfterEachTask.push(studentScore)
+      })
+      student['scoreAfterEachTask'] = studentsScoreAfterEachTask;
+  })
+}
+
+function getAllScoreForEachTask(studentData, taskList) {
+  const allScoreForEachTask = []
+  taskList.forEach((task, index) => {
+    allScoreForEachTask.push({
+      'name': task.name,
+      'score': [],
+    });
+  });
+  studentData.forEach((student) => {
+    student['scoreAfterEachTask'].forEach((score, index) => {
+      allScoreForEachTask[index]['score'].push(score);
+    })
+  })
+  allScoreForEachTask.forEach((item) => {
+    item.score.sort((a, b) => b - a);
+  });
+  return allScoreForEachTask;
+}
+
+function getStudentsPlaceHistory(studentData, allScoreForEachTask) {
+  const studentsPlaceHistoryJson = [];
+  studentData.forEach((student) => {
+    if (student.isActive) {
+      const studentsPlace = [];
+      student['scoreAfterEachTask'].forEach((score, index) => {
+        const allScoreForTask = allScoreForEachTask[index]['score'];
+        studentsPlace.push(allScoreForTask.indexOf(score) + 1);
+      })
+      studentsPlaceHistoryJson.push({
+        'githubId': student.githubId,
+        'placeHistory': studentsPlace,
+      })
+    }
+  })
+  return studentsPlaceHistoryJson;
+}
+
+function studentsScoreChangingJson(studentData, scheduleData) {
+  const taskList = getTaskList(scheduleData);
+  addStudentsScoreAfterEachTask(studentData, taskList);
+  const allScoreForEachTask = getAllScoreForEachTask(studentData, taskList);
+  const studentsPlaceHistory = getStudentsPlaceHistory(studentData, allScoreForEachTask);
+  const studentPlaceHistoryJson = {
+    taskList,
+    studentsPlaceHistory,
+  }
+  saveFile('../../public/data/studentPlaceHistory.json', JSON.stringify(studentPlaceHistoryJson, null));
+}
+
 export function studentsInfo(studentData, scheduleData, NumberOfTheTopCountry, minimumPeopleFromCity) {
   // createStudentsNameList(studentData) // 'students/student-name.csv'
-  studentsConst(studentData, NumberOfTheTopCountry, minimumPeopleFromCity);
-  // studentsJson(studentData);
+  // getStudentConst(studentData, NumberOfTheTopCountry, minimumPeopleFromCity);
+  studentsScoreChangingJson(studentData, scheduleData);
 }
+

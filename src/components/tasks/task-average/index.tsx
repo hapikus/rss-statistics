@@ -9,12 +9,20 @@ import styles from "./task-average.module.css";
 import type { RadioChangeEvent } from "antd";
 const { Title } = Typography;
 
-const selectOnChange = (value: string) => {
+const selectOnChangeTag = (value: string) => {
   store.setTasksAverageSelectedTag(value);
 };
 
-const selectOnSearch = (value: string) => {
-  console.log("selectOnSearch:", value);
+const selectOnSearchTag = (value: string) => {
+  console.log("selectOnSearchTag:", value);
+};
+
+const selectOnChangeStudentGit = (value: string) => {
+  store.setTasksAverageSelectedStudentGit(value);
+};
+
+const selectOnSearchStudentGit= (value: string) => {
+  console.log("selectOnSearchGit:", value);
 };
 
 const handleWeightChange = (e: RadioChangeEvent) => {
@@ -23,17 +31,25 @@ const handleWeightChange = (e: RadioChangeEvent) => {
 
 const AverageAndMaxPlot = () => {
   const data: any[] = [];
+  let selectStudent = store.tasksAverageSelectedStudentGit;
   let maxTaskScore = -Infinity;
   let minAverageScore = Infinity;
   const taskScoreMap = new Map();
   const weightOpt = store.tasksAverageSelectedWeight === "without Weight";
   store.taskJson.forEach((task: any) => {
     if (task.tag === store.tasksAverageSelectedTag) {
+      let studentScore = 0;
+      store.tasksResultsJson[selectStudent].forEach((taskResult: any) => {
+        if (task.id === taskResult.courseTaskId) {
+          studentScore = taskResult.score;
+        }
+      })
       data.push({
         name: task.name,
         averageScore: weightOpt
           ? task.averageScore.toFixed(0)
           : (task.averageScore * task.scoreWeight).toFixed(0),
+        studentScore:  weightOpt ? studentScore : studentScore * task.scoreWeight,
         maxScore: weightOpt ? task.maxScore : task.maxScore * task.scoreWeight,
       });
       maxTaskScore = Math.max(
@@ -55,77 +71,126 @@ const AverageAndMaxPlot = () => {
   });
   const paletteSemanticRed = '#F4664A';
   const brandColor = '#5B8FF9';
+  const averageScoreConfig =
+   {
+    type: "column",
+    options: {
+      data,
+      xField: "name",
+      yField: "averageScore",
+      yAxis: {
+        type: "linear",
+        max: maxTaskScore + maxTaskScore * 0.01,
+      },
+      color: (data: any) => {
+        if (taskScoreMap.get(data.name) <= minAverageScore * 1.05) {
+          return paletteSemanticRed;
+        }      
+        return brandColor;
+      },
+      meta: {
+        date: {
+          sync: true,
+        },
+        value: {
+          alias: "Average score",
+        },
+        averageScore: {
+          alias: "Average score",
+        },
+      },
+      label: {
+        position: "middle",
+      },
+    },
+  };
+  const maxScoreConfig = 
+  {
+    type: "line",
+    options: {
+      data,
+      xField: "name",
+      yField: "maxScore",
+      xAxis: false,
+      yAxis: {
+        type: "linear",
+        max: maxTaskScore + maxTaskScore * 0.01,
+      },
+      label: {
+        offsetY: -8,
+      },
+      meta: {
+        count: {
+          alias: "Max score",
+        },
+        maxScore: {
+          alias: 'Max Score',
+        },
+      },
+      color: "#FF6B3B",
+      annotations: data.map((d: any) => {
+        return {
+          type: "dataMarker",
+          position: { date: d.date, value: d.count },
+          point: {
+            style: {
+              stroke: "#FF6B3B",
+              lineWidth: 1.5,
+            },
+          },
+        };
+      }),
+    },
+  };
+  const studentConfig = 
+  {
+    type: "line",
+    options: {
+      data,
+      xField: "name",
+      yField: "studentScore",
+      xAxis: false,
+      yAxis: {
+        type: "linear",
+        max: maxTaskScore + maxTaskScore * 0.01,
+      },
+      meta: {
+        count: {
+          alias: "Student score",
+        },
+        studentScore: {
+          alias: `${store.tasksAverageSelectedStudentGit} score`,
+        },
+      },
+      color: '#00C1DE',
+      annotations: data.map((d: any) => {
+        return {
+          type: "dataMarker",
+          position: { date: d.date, value: d.count },
+          point: {
+            style: {
+              stroke: '#00C1DE',
+              lineWidth: 1.5,
+            },
+          },
+        };
+      }),
+      lineStyle: {
+        lineWidth: 3,
+      },
+    },
+  }
+  const plots: any = [averageScoreConfig, studentConfig]
+  if (store.tasksAverageSelectedTag !== 'test') {
+    plots.unshift(maxScoreConfig);
+  }
   const config: any = {
     appendPadding: 8,
     tooltip: {
       shared: true,
     },
     syncViewPadding: true,
-    plots: [
-      {
-        type: "column",
-        options: {
-          data,
-          xField: "name",
-          yField: "averageScore",
-          yAxis: {
-            type: "linear",
-            max: maxTaskScore + maxTaskScore * 0.01,
-          },
-          color: (data: any) => {
-            if (taskScoreMap.get(data.name) <= minAverageScore * 1.05) {
-              return paletteSemanticRed;
-            }      
-            return brandColor;
-          },
-          meta: {
-            date: {
-              sync: true,
-            },
-            value: {
-              alias: "Average score",
-            },
-          },
-          label: {
-            position: "middle",
-          },
-        },
-      },
-      {
-        type: "line",
-        options: {
-          data,
-          xField: "name",
-          yField: "maxScore",
-          xAxis: false,
-          yAxis: {
-            type: "linear",
-            max: maxTaskScore + maxTaskScore * 0.01,
-          },
-          label: {
-            offsetY: -8,
-          },
-          meta: {
-            count: {
-              alias: "Max score",
-            },
-          },
-          color: "#FF6B3B",
-          annotations: data.map((d: any) => {
-            return {
-              type: "dataMarker",
-              position: { date: d.date, value: d.count },
-              point: {
-                style: {
-                  stroke: "#FF6B3B",
-                  lineWidth: 1.5,
-                },
-              },
-            };
-          }),
-        },
-      },
-    ],
+    plots,
   };
 
   return <Mix {...config} />;
@@ -136,6 +201,7 @@ const TasksAverage = () => {
     return <div>Loading...</div>;
   }
   const optionsSelectTag: any = store.optionsTaskTag;
+  const studentsGithubIDSelect: any = store.optionsStudentsId;
   return (
     <>
       <Title className={styles.title} level={2}>
@@ -147,13 +213,26 @@ const TasksAverage = () => {
           showSearch
           placeholder="Select a type"
           optionFilterProp="children"
-          defaultValue={optionsSelectTag[0].label}
-          onChange={selectOnChange}
-          onSearch={selectOnSearch}
+          defaultValue={store.tasksAverageSelectedTag}
+          onChange={selectOnChangeTag}
+          onSearch={selectOnSearchTag}
           filterOption={(input: any, option: any) =>
             (option?.label ?? "").toLowerCase().includes(input.toLowerCase())
           }
           options={optionsSelectTag}
+        />
+        <Select
+          className={styles.selectStudentGit}
+          showSearch
+          placeholder="Select a type"
+          optionFilterProp="children"
+          defaultValue={store.tasksAverageSelectedStudentGit}
+          onChange={selectOnChangeStudentGit}
+          onSearch={selectOnSearchStudentGit}
+          filterOption={(input: any, option: any) =>
+            (option?.label ?? "").toLowerCase().includes(input.toLowerCase())
+          }
+          options={studentsGithubIDSelect}
         />
         <Radio.Group
           value={store.tasksAverageSelectedWeight}

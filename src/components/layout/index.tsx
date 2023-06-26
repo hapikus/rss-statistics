@@ -52,14 +52,19 @@ const items: MenuItem[] = [
         "3",
         <GlobalOutlined />
       ),
+      getItem(
+        <Link to="/students-place-history">Place History</Link>,
+        "4",
+        <LineChartOutlined />
+      ),
     ]
   ),
   getItem(<Link className={styles.menuTitleLink} to="/tasks-main">Tasks</Link>, "sub2", <BarsOutlined />, [
-    getItem(<Link to="/tasks-main">Overview</Link>, "4", <BarsOutlined />),
-    getItem(<Link to="/task-average">Average</Link>, "5", <LineChartOutlined />),
+    getItem(<Link to="/tasks-main">Overview</Link>, "5", <BarsOutlined />),
+    getItem(<Link to="/task-average">Average</Link>, "6", <LineChartOutlined />),
     getItem(
       <Link to="/task-score">Score</Link>,
-      "6",
+      "7",
       <UserOutlined />
     ),
   ]),
@@ -70,31 +75,32 @@ const items: MenuItem[] = [
     [
       getItem(
         <Link to="/mentors-main">Overview</Link>,
-        "7",
+        "8",
         <TeamOutlined />
       ),
       getItem(
         <Link to="/mentors-overview">Students-mentor</Link>,
-        "8",
+        "9",
         <BlockOutlined />
       ),
     ]
   ),
-  getItem(<Link to="/faq">FAQ</Link>, "9", <QuestionCircleOutlined />),
-  getItem(<Link to="/about">About</Link>, "10", <InfoCircleOutlined />),
+  getItem(<Link to="/faq">FAQ</Link>, "10", <QuestionCircleOutlined />),
+  getItem(<Link to="/about">About</Link>, "11", <InfoCircleOutlined />),
 ];
 
 const pathKey: any = {
   '/': ['1', ''],
   '/students-main': ['2', 'sub1'],
   '/students-geography': ['3', 'sub1'],
-  '/tasks-main': ['4', 'sub2'],
-  '/task-average': ['5', 'sub2'],
-  '/task-score': ['6', 'sub2'],
-  '/mentors-main': ['7', 'sub3'],
-  '/mentors-overview': ['8', 'sub3'],
-  '/faq': ['9', ''],
-  '/about': ['10', ''],
+  '/students-place-history': ['4', 'sub1'],
+  '/tasks-main': ['5', 'sub2'],
+  '/task-average': ['6', 'sub2'],
+  '/task-score': ['7', 'sub2'],
+  '/mentors-main': ['8', 'sub3'],
+  '/mentors-overview': ['9', 'sub3'],
+  '/faq': ['10', ''],
+  '/about': ['11', ''],
 }
 
 const Layout: React.FC = () => {

@@ -16,13 +16,19 @@ class Store {
   studentsGender?: StudentsGender | any;
   studentsCountry?: StudentsCountry | any;
   studentsCity?: StudentsCity | any;
+  studentsPlaceHistory: any;
+  taskList: any;
   taskJson?: Task[] | any;
   tasksResultsJson: any;
   taskTag?: TaskTag | any;
   optionsTaskTag: any;
   optionsTaskList: any;
+  optionsStudentsId: any;
   tasksScoreSelectedTask: any;
   mentorsJson?: MentorsJson | any;
+
+  studentsPlaceHistorySelectedStudentGit: any;
+  tasksAverageSelectedStudentGit: any;
 
   constructor() {
     this.loadData();
@@ -31,6 +37,7 @@ class Store {
 
   loadData = async () => {
     await this.studentsConstJsonLoadData();
+    await this.studentPlaceHistoryLoadData();
     await this.tasksTagLoadData();
     await this.tasksJsonLoadData();
     await this.tasksResultsJsonLoadData();
@@ -38,6 +45,11 @@ class Store {
 
     this.optionsTaskTag = this.getSelectionOptionsTaskTag();
     this.optionsTaskList = this.getSelectionOptionTaskList();
+    this.optionsStudentsId = this.getSelectionStudentGithubId();
+    this.studentsPlaceHistorySelectedStudentGit = 
+      this.optionsStudentsId[0].value;
+    this.tasksAverageSelectedStudentGit =
+      this.optionsStudentsId[0].value;
     this.tasksScoreSelectedTask =
       this.optionsTaskList[this.tasksScoreSelectedTag][0];
     this.isLoad = true;
@@ -53,6 +65,14 @@ class Store {
     this.studentsCountry = studentsData["studentsCountry"];
     this.studentsCity = studentsData["studentsCity"];
   };
+
+  studentPlaceHistoryLoadData = async () => {
+    const studentPlaceHistoryData = await fetch(
+      "/rss-statistics/data/studentPlaceHistory.json"
+    ).then((response) => response.json());
+  this.taskList = studentPlaceHistoryData.taskList;
+  this.studentsPlaceHistory = studentPlaceHistoryData.studentsPlaceHistory
+  }
 
   tasksTagLoadData = async () => {
     const taskTagData = await fetch("/rss-statistics/data/tasksTag.json").then((response) =>
@@ -91,12 +111,14 @@ class Store {
   setStudentsGeographySelected = action((country: string) => {
     this.studentsGeographySelected = country;
   });
+  setStudentsPlaceHistorySelectedStudentGit = action((name: string) => {
+    this.studentsPlaceHistorySelectedStudentGit = name;
+  })
 
   // tasks
   tasksMainSelectedTag = "test";
   tasksAverageSelectedTag = "test";
   tasksAverageSelectedWeight = "without Weight";
-  tasksAverageSelectedPersonName = "none";
   tasksAverageSelectedPersonStatus = "Active";
   tasksScoreSelectedTag = "test";
   setTasksMainSelectedTag = action((taskType: string) => {
@@ -111,8 +133,8 @@ class Store {
   setTasksAverageSelectedWeight = action((weightOptions: string) => {
     this.tasksAverageSelectedWeight = weightOptions;
   });
-  setTasksAverageSelectedPersonName = action((name: string) => {
-    this.tasksAverageSelectedPersonName = name;
+  setTasksAverageSelectedStudentGit = action((name: string) => {
+    this.tasksAverageSelectedStudentGit = name;
   });
   setTasksAverageSelectedPersonStatus = action((status: string) => {
     this.tasksAverageSelectedPersonStatus = status;
@@ -140,7 +162,7 @@ class Store {
     const options: { value: string; label: string }[] = [];
     const optionSet = new Set();
     this.taskJson.forEach((task: any) => {
-      if (!optionSet.has(task.tag) && !task.tag.includes("submit")) {
+      if (!optionSet.has(task.tag)) {
         options.push({
           value: task.tag,
           label: task.tag[0].toUpperCase() + task.tag.slice(1),
@@ -149,6 +171,18 @@ class Store {
       optionSet.add(task.tag);
     });
     return options;
+  }
+
+  getSelectionStudentGithubId() {
+    const options: any = [];
+    let studentGit: any;
+    for (studentGit of Object.keys(this.tasksResultsJson)) {
+      options.push({
+        value: studentGit,
+        label: studentGit,
+      })
+    }
+    return options
   }
 
   getSelectionOptionTaskList() {

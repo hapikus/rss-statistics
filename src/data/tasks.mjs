@@ -24,8 +24,10 @@ function getTasksTag(data) {
 
 function getTasksJson(students, schedule) {
   const tasksList = []
+  const currentTime = Date.now();
   schedule.forEach((task) => {
-    if (task.status === 'done' && task.maxScore) {
+    const endDate = new Date(task.endDate).getTime();
+    if (endDate <= currentTime && task.maxScore && !task.tag.includes("submit")) {
       tasksList.push({
         id: task.id,
         name: task.name,
@@ -39,7 +41,7 @@ function getTasksJson(students, schedule) {
 
   const taskScore = {};
   students.forEach((student) => {
-    student.taskResults.forEach((result) => {
+    student['taskResults'].forEach((result) => {
       const {courseTaskId, score} = result;
       if (!taskScore.hasOwnProperty(courseTaskId)) {
         taskScore[courseTaskId] = {};
