@@ -3,6 +3,9 @@ import { observer } from "mobx-react-lite";
 import { Select, Typography } from "antd";
 import { Line } from '@ant-design/plots';
 
+import PopoverButton from '../../global/PopoverButton';
+import { PopoverContentStudentsPlaceHistory } from '../../global/PopoverBlocks';
+
 import store from "../../../stores/RssStatisticsData";
 import styles from "./students-place-history.module.css";
 
@@ -18,6 +21,7 @@ const selectOnSearchStudentGit = (value: string) => {
 
 const StudentPlaceHistoryLine = () => {
   const data: any = [];
+  let maxPlace = -Infinity;
   store.studentsPlaceHistory.forEach((student: any) => {
     if (student.githubId === store.studentsPlaceHistorySelectedStudentGit) {
       student.placeHistory.forEach((place: any, index: number) => {
@@ -25,6 +29,7 @@ const StudentPlaceHistoryLine = () => {
           task: store.taskList[index]['name'],
           place,
         })
+        maxPlace = Math.max(maxPlace, place)
       })
     }
   });
@@ -32,11 +37,10 @@ const StudentPlaceHistoryLine = () => {
     data,
     xField: 'task',
     yField: 'place',
-    seriesField: 'place',
+    seriesField: false,
     yAxis: {
-      label: {
-        formatter: (place: any) => `${place}`,
-      },
+      type: "linear",
+      max: maxPlace + maxPlace * 0.05,
     },
     smooth: true,
     animation: {
@@ -44,6 +48,9 @@ const StudentPlaceHistoryLine = () => {
         animation: 'path-in',
         duration: 1700,
       },
+    },
+    lineStyle: {
+      lineWidth: 3,
     },
   };
 
@@ -57,9 +64,12 @@ const StudentPlaceHistory = () => {
   const studentsGithubIDSelect: any = store.optionsStudentsId;
   return (
     <>
-      <Title className={styles.title} level={2}>
-        Student Place History: Score Comparison
-      </Title>
+      <div className={styles.titleContainter}>
+        <Title className={styles.title} level={2}>
+          Student Place History: Score Comparison
+        </Title>
+        <PopoverButton content={<PopoverContentStudentsPlaceHistory />} />
+      </div>
       <div>
         <Select
           className={styles.selectStudentGit}

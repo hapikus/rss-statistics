@@ -19,8 +19,8 @@ const About = () => {
           <b>Project Name:</b> Rss statistics.
         </div>
         <div>
-          <b>Project Description:</b> The project contains various analytics
-          based on the data available from the Score table.
+          <b>Project Description:</b> A website offering detailed analytics and
+          data visualization for the JS FE 2023 Q1 course.
         </div>
         <div>
           <b>Target Audience:</b> Students and mentors of the course.
@@ -31,8 +31,8 @@ const About = () => {
           mix of them are used.
         </div>
         <div>
-          <b>Technology Stack:</b> TypeScript, React, Mobx,
-          react-router, Ant Design, @ant-design/plots.
+          <b>Technology Stack:</b> TypeScript, React, Mobx, react-router, Ant
+          Design, @ant-design/plots.
         </div>
         <div className={styles.contactInfoCont}>
           <b>Contact Information: </b>
@@ -50,7 +50,10 @@ const About = () => {
             Discord
           </a>
         </div>
-        <div>If you have any feedback or suggestions, please don't hesitate to reach out to me.</div>
+        <div>
+          If you have any feedback or suggestions, please don't hesitate to
+          reach out to me.
+        </div>
       </div>
     </>
   );

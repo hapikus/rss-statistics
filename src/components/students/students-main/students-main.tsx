@@ -3,6 +3,9 @@ import { observer } from "mobx-react-lite";
 import { Liquid, Bar, Pie } from '@ant-design/plots';
 import { Typography } from 'antd';
 
+import PopoverButton from '../../global/PopoverButton';
+import { PopoverContentStudentsMain } from '../../global/PopoverBlocks'
+
 import store from '../../../stores/RssStatisticsData';
 import styles from './students-main.module.css'
 
@@ -38,6 +41,7 @@ const GenderBar = (): any => {
       })
     }
   }
+  data.sort((a, b) => b.value - a.value);
   const config: any = {
     data,
     xField: 'value',
@@ -94,18 +98,21 @@ const StudentsMain = () => {
   }
   return (
   <>
-    <Title className={styles.titleMain} level={2}>Students</Title>
+    <div className={styles.titleContainter}>
+      <Title className={styles.titleMain} level={2}>Students</Title>
+      <PopoverButton content={<PopoverContentStudentsMain />} />
+    </div>
     <div className={styles.mainPlotContainer}>
       <div className={styles.liquidPlotContainer}>
-      <Title className={styles.titleSecond} level={4}>Active students</Title>
+      <Title className={styles.titleSecond} level={4}>% of Active students</Title>
         {ActiveLiquid()}
       </div>
       <div className={styles.barPlotContainer}>
-      <Title className={styles.titleSecond} level={4}>Gender guess</Title>
+      <Title className={styles.titleSecond} level={4}>ChatGPT's gender prediction</Title>
         {GenderBar()}
       </div>
       <div className={styles.countryContainer}>
-      <Title className={styles.titleSecond} level={4}>Country</Title>
+      <Title className={styles.titleSecond} level={4}>Distribution of students by countries</Title>
         {CountryPie()}
       </div>
     </div>

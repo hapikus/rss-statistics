@@ -1,4 +1,3 @@
-/* 420px size */
 .liquidPlotContainer {
   width: 220px;
 }
@@ -10,7 +9,6 @@
 .countryContainer {
   width: 550px;
 }
-
 
 .mainPlotContainer {
   display: flex;
@@ -25,4 +23,11 @@
 .titleSecond {
   margin-top: 10px;
   text-align: center;
+}
+
+.titleContainter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 15px;
 }

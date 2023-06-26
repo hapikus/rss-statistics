@@ -128,18 +128,6 @@ const AverageAndMaxPlot = () => {
         },
       },
       color: "#FF6B3B",
-      annotations: data.map((d: any) => {
-        return {
-          type: "dataMarker",
-          position: { date: d.date, value: d.count },
-          point: {
-            style: {
-              stroke: "#FF6B3B",
-              lineWidth: 1.5,
-            },
-          },
-        };
-      }),
     },
   };
   const studentConfig = 
@@ -163,18 +151,6 @@ const AverageAndMaxPlot = () => {
         },
       },
       color: '#00C1DE',
-      annotations: data.map((d: any) => {
-        return {
-          type: "dataMarker",
-          position: { date: d.date, value: d.count },
-          point: {
-            style: {
-              stroke: '#00C1DE',
-              lineWidth: 1.5,
-            },
-          },
-        };
-      }),
       lineStyle: {
         lineWidth: 3,
       },

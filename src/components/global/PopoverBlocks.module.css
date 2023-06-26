@@ -1,0 +1,13 @@
+.popoverContainer {
+    width: 450px;
+  }
+  
+  .popoverTitle {
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0;
+  }
+  
+  .popoverText {
+    font-size: 16px;
+  }
