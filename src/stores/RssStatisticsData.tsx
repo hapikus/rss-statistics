@@ -17,6 +17,7 @@ class Store {
   studentsCountry?: StudentsCountry | any;
   studentsCity?: StudentsCity | any;
   taskJson?: Task[] | any;
+  tasksResultsJson: any;
   taskTag?: TaskTag | any;
   optionsTaskTag: any;
   optionsTaskList: any;
@@ -32,6 +33,7 @@ class Store {
     await this.studentsConstJsonLoadData();
     await this.tasksTagLoadData();
     await this.tasksJsonLoadData();
+    await this.tasksResultsJsonLoadData();
     await this.mentorsJsonLoadData();
 
     this.optionsTaskTag = this.getSelectionOptionsTaskTag();
@@ -42,7 +44,7 @@ class Store {
   };
 
   studentsConstJsonLoadData = async () => {
-    const studentsData = await fetch("/data/studentConst.json").then(
+    const studentsData = await fetch("/rss-statistics/data/studentConst.json").then(
       (response) => response.json()
     );
     this.studentsTotal = Number(studentsData["studentsTotal"]);
@@ -53,21 +55,28 @@ class Store {
   };
 
   tasksTagLoadData = async () => {
-    const taskTagData = await fetch("/data/tasksTag.json").then((response) =>
+    const taskTagData = await fetch("/rss-statistics/data/tasksTag.json").then((response) =>
       response.json()
     );
     this.taskTag = taskTagData;
   };
 
   tasksJsonLoadData = async () => {
-    const tasksData = await fetch("/data/tasks.json").then((response) =>
+    const tasksData = await fetch("/rss-statistics/data/tasks.json").then((response) =>
       response.json()
     );
     this.taskJson = tasksData;
   };
 
+  tasksResultsJsonLoadData = async () => {
+    const tasksResultsData = await fetch("/rss-statistics/data/tasksResults.json").then((response) =>
+      response.json()
+    );
+    this.tasksResultsJson = tasksResultsData;
+  };
+
   mentorsJsonLoadData = async () => {
-    const jsonData = await fetch("/data/mentors.json").then((response) =>
+    const jsonData = await fetch("/rss-statistics/data/mentors.json").then((response) =>
       response.json()
     );
     this.mentorsJson = jsonData;

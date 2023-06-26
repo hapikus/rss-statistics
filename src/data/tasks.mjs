@@ -4,7 +4,7 @@ function tagSort(a, b) {
   return b[1] - a[1];
 }
 
-function tags(data) {
+function getTasksTag(data) {
   const tagsMap = {};
   data.forEach((task) => {
     if (task.tag) {
@@ -22,7 +22,7 @@ function tags(data) {
   saveFile('../../public/data/tasksTag.json', JSON.stringify(sortable, null, 2));
 }
 
-function peopleInTask(students, schedule) {
+function getTasksJson(students, schedule) {
   const tasksList = []
   schedule.forEach((task) => {
     if (task.status === 'done' && task.maxScore) {
@@ -67,7 +67,18 @@ function peopleInTask(students, schedule) {
   saveFile('../../public/data/tasks.json', JSON.stringify(tasksList, null, 2));
 }
 
+function getTasksResults(students, schedule) {
+  let tasksResults = {};
+  students.forEach((student) => {
+    if (student.isActive) {
+      tasksResults[student.githubId] = student['taskResults'];
+    }
+  })
+  saveFile('../../public/data/tasksResults.json', JSON.stringify(tasksResults, null));
+}
+
 export function tasksInfo(students, schedule) {
-  tags(schedule);
-  peopleInTask(students, schedule);
+  getTasksTag(schedule);
+  getTasksJson(students, schedule);
+  getTasksResults(students, schedule);
 }

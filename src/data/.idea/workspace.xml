@@ -5,15 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cde9390b-717c-4d1b-b548-5e80d32f68d3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../public/data/mentors.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../public/data/mentors.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../public/data/studentConst.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../public/data/studentConst.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../public/data/tasks.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../public/data/tasks.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../public/data/tasksTag.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../public/data/tasksTag.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../components/layout/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../components/layout/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../components/students/students-main/students-main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../components/students/students-main/students-main.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../components/mentors/mentors-students-overview/mentors-students-overview.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../components/mentors/mentors-students-overview/mentors-students-overview.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../components/statistics-info/statistics-info.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/../components/statistics-info/statistics-info.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../components/statistics-info/statistics-info.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../components/statistics-info/statistics-info.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/all-students.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/metors.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/metors.mjs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/split-all-data.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/split-all-data.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tasks.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/tasks.mjs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../stores/RssStatisticsData.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../stores/RssStatisticsData.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,23 +40,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "javascript.nodejs.core.library.configured.version": "16.20.0",
-    "javascript.nodejs.core.library.typings.version": "16.18.36",
-    "last_opened_file_path": "C:/pythonProject/rss-statistics/src/data",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2022.2.3\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;16.20.0&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;16.18.36&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/pythonProject/rss-statistics/src/data&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2022.2.3\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\pythonProject\rss-statistics\src\data" />
@@ -101,6 +101,8 @@
       <workItem from="1687188697861" duration="1215000" />
       <workItem from="1687277365705" duration="25000" />
       <workItem from="1687355305316" duration="1559000" />
+      <workItem from="1687428270281" duration="9000" />
+      <workItem from="1687774654700" duration="1741000" />
     </task>
     <servers />
   </component>

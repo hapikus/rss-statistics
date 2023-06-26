@@ -1,4 +1,15 @@
 .title {
-    margin-top: 5px;
-    text-align: center;
-  }
+  margin-top: 5px;
+  text-align: center;
+}
+
+.titleContainter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.questionButton {
+  margin-top: -10px;
+}

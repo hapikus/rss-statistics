@@ -39,14 +39,13 @@ function createColumnsMentorsStudents(): any {
 
   let mentorId: any;
   let mentor: any;
-  let student: any;
   for ([mentorId, mentor] of Object.entries(store.mentorsJson)) {
     if (mentor.githubId === store.mentorStudentsSelectedMentor) {
       store.setMentorStudentsSelectedMentorId(mentorId);
       let count = 1;
-      for (student of Object.keys(mentor.students)) {
+      mentor.students.forEach((studentName: any) => {
         columns.push({
-          title: student,
+          title: studentName,
           dataIndex: `student.name ${count}`,
           key: `student.name ${count}`,
           render: (value: any, record: any) => (
@@ -61,7 +60,7 @@ function createColumnsMentorsStudents(): any {
           ),
         });
         count += 1;
-      }
+      })
     }
   }
   return columns;
@@ -77,12 +76,11 @@ function createDataMentorsStudents(): any {
       row["taskname"] = task.name;
       row["averageScore"] = task.averageScore.toFixed(2);
       let count = 1;
-      let student: any;
       const mentor = store.mentorsJson[store.mentorStudentsSelectedMentorId];
       let studentScore: any = 0;
-      for (student of Object.keys(mentor.students)) {
+      mentor.students.forEach((student: any) => {
         let taskResult: any;
-        for (taskResult of mentor.students[student]) {
+        for (taskResult of store.tasksResultsJson[student]) {
           if (taskResult.courseTaskId === task.id) {
             studentScore = taskResult.score;
             break;
@@ -90,7 +88,7 @@ function createDataMentorsStudents(): any {
         }
         row[`student.name ${count}`] = studentScore;
         count += 1;
-      }
+      })
       rowKey += 1; 
       dataSource.push(row);
     }
