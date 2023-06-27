@@ -20,16 +20,16 @@ const selectOnChangeStudentGit = (value: string) => {
   store.setTasksAverageSelectedStudentGit(value);
 };
 
-const selectOnSearchStudentGit= (value: string) => {
+const selectOnSearchStudentGit = (value: string) => {
   console.log("selectOnSearchGit:", value);
 };
 
 const onChangeSwithWeight = (checked: boolean) => {
   if (checked) {
-    store.setTasksAverageSelectedWeight('with Weight');
-    return
+    store.setTasksAverageSelectedWeight("with Weight");
+    return;
   }
-  store.setTasksAverageSelectedWeight('without Weight');
+  store.setTasksAverageSelectedWeight("without Weight");
 };
 
 const AverageAndMaxPlot = () => {
@@ -46,13 +46,24 @@ const AverageAndMaxPlot = () => {
         if (task.id === taskResult.courseTaskId) {
           studentScore = taskResult.score;
         }
-      })
+      });
+      let peopleBetterThanStudent = 0;
+      let taskScore: any;
+      let taskScorePeople: any;
+      for ([taskScore, taskScorePeople]  of Object.entries(task.scoreObj)) {
+        if (+taskScore >= studentScore) {
+          peopleBetterThanStudent += taskScorePeople;
+        }
+      }
       data.push({
         name: task.name,
         averageScore: weightOpt
           ? task.averageScore.toFixed(0)
           : (task.averageScore * task.scoreWeight).toFixed(0),
-        studentScore:  weightOpt ? studentScore : studentScore * task.scoreWeight,
+        studentScore: weightOpt
+          ? studentScore
+          : studentScore * task.scoreWeight,
+        inTheTop: peopleBetterThanStudent ? ((peopleBetterThanStudent / task.totalPeople) * 100).toFixed(0) : 0,
         maxScore: weightOpt ? task.maxScore : task.maxScore * task.scoreWeight,
       });
       maxTaskScore = Math.max(
@@ -66,16 +77,16 @@ const AverageAndMaxPlot = () => {
         minAverageScore
       );
       taskScoreMap.set(
-        task.name, weightOpt
-        ? task.averageScore.toFixed(0)
-        : (task.averageScore * task.scoreWeight).toFixed(0)
+        task.name,
+        weightOpt
+          ? task.averageScore.toFixed(0)
+          : (task.averageScore * task.scoreWeight).toFixed(0)
       );
     }
   });
-  const paletteSemanticRed = '#F4664A';
-  const brandColor = '#5B8FF9';
-  const averageScoreConfig =
-   {
+  const paletteSemanticRed = "#F4664A";
+  const brandColor = "#5B8FF9";
+  const averageScoreConfig = {
     type: "column",
     options: {
       data,
@@ -88,7 +99,7 @@ const AverageAndMaxPlot = () => {
       color: (data: any) => {
         if (taskScoreMap.get(data.name) <= minAverageScore * 1.05) {
           return paletteSemanticRed;
-        }      
+        }
         return brandColor;
       },
       meta: {
@@ -107,8 +118,7 @@ const AverageAndMaxPlot = () => {
       },
     },
   };
-  const maxScoreConfig = 
-  {
+  const maxScoreConfig = {
     type: "line",
     options: {
       data,
@@ -127,14 +137,13 @@ const AverageAndMaxPlot = () => {
           alias: "Max score",
         },
         maxScore: {
-          alias: 'Max Score',
+          alias: "Max Score",
         },
       },
       color: "#FF6B3B",
     },
   };
-  const studentConfig = 
-  {
+  const studentConfig = {
     type: "line",
     options: {
       data,
@@ -153,23 +162,59 @@ const AverageAndMaxPlot = () => {
           alias: `${store.tasksAverageSelectedStudentGit} score`,
         },
       },
-      color: '#00C1DE',
+      color: "#00C1DE",
       lineStyle: {
         lineWidth: 3,
       },
     },
-  }
-  const plots: any = [averageScoreConfig, studentConfig]
-  if (store.tasksAverageSelectedTag !== 'test') {
+  };
+  const plots: any = [averageScoreConfig, studentConfig];
+  if (store.tasksAverageSelectedTag !== "test") {
     plots.unshift(maxScoreConfig);
   }
   const config: any = {
     appendPadding: 8,
-    tooltip: {
-      shared: true,
-    },
     syncViewPadding: true,
     plots,
+    tooltip: {
+      showMarkers: false,
+      customContent: (title: string, items: any[]) => {
+        const tooltipData = items.find(
+          (item) => item.data.name === title
+        )?.data;
+        return (
+          <div>
+            <p className={styles.tooltipTitle}>{title}</p>
+            {tooltipData && (
+              <>
+                <p className={styles.tooltipText}>
+                  <svg width="10" height="10" style={{ marginRight: 8 }}>
+                    <circle cx="5" cy="5" r="4" fill={"#FF6B3B"} />
+                  </svg>
+                  Max Score: {tooltipData.maxScore}
+                </p>
+                <p className={styles.tooltipText}>
+                  <svg width="10" height="10" style={{ marginRight: 8 }}>
+                    <circle cx="5" cy="5" r="4" fill={"#6395fa"} />
+                  </svg>
+                  Average Score: {tooltipData.averageScore}
+                </p>
+                <p className={styles.tooltipText}>
+                  <svg width="10" height="10" style={{ marginRight: 8 }}>
+                    <circle cx="5" cy="5" r="4" fill={"#00C1DE"} />
+                  </svg>
+                  {store.tasksAverageSelectedStudentGit} Score:{" "}
+                  {tooltipData.studentScore}
+                </p>
+                <p className={styles.tooltipText}>
+                  Ranked in the Top: {tooltipData.inTheTop}%
+                </p>
+              </>
+            )}
+          </div>
+        );
+      },
+    },
   };
 
   return <Mix {...config} />;
@@ -219,7 +264,7 @@ const TasksAverage = () => {
           <Switch
             className={styles.switchWeight}
             onChange={onChangeSwithWeight}
-            defaultChecked={store.tasksAverageSelectedWeight === 'with Weight'}
+            defaultChecked={store.tasksAverageSelectedWeight === "with Weight"}
           />
           <p className={styles.switchName}>Weight</p>
         </div>
