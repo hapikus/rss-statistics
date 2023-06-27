@@ -1,12 +1,11 @@
 import React from "react";
 import { observer } from "mobx-react-lite";
-import { Radio, Select, Typography } from "antd";
+import { Select, Typography, Switch } from "antd";
 import { Mix } from "@ant-design/plots";
 
 import store from "../../../stores/RssStatisticsData";
 import styles from "./task-average.module.css";
 
-import type { RadioChangeEvent } from "antd";
 const { Title } = Typography;
 
 const selectOnChangeTag = (value: string) => {
@@ -25,8 +24,12 @@ const selectOnSearchStudentGit= (value: string) => {
   console.log("selectOnSearchGit:", value);
 };
 
-const handleWeightChange = (e: RadioChangeEvent) => {
-  store.setTasksAverageSelectedWeight(e.target.value);
+const onChangeSwithWeight = (checked: boolean) => {
+  if (checked) {
+    store.setTasksAverageSelectedWeight('with Weight');
+    return
+  }
+  store.setTasksAverageSelectedWeight('without Weight');
 };
 
 const AverageAndMaxPlot = () => {
@@ -181,42 +184,45 @@ const TasksAverage = () => {
   return (
     <>
       <Title className={styles.title} level={2}>
-        Average Score
+        The average score achieved by students for each task
       </Title>
       <div className={styles.optionContainer}>
-        <Select
-          className={styles.selectTag}
-          showSearch
-          placeholder="Select a type"
-          optionFilterProp="children"
-          defaultValue={store.tasksAverageSelectedTag}
-          onChange={selectOnChangeTag}
-          onSearch={selectOnSearchTag}
-          filterOption={(input: any, option: any) =>
-            (option?.label ?? "").toLowerCase().includes(input.toLowerCase())
-          }
-          options={optionsSelectTag}
-        />
-        <Select
-          className={styles.selectStudentGit}
-          showSearch
-          placeholder="Select a type"
-          optionFilterProp="children"
-          defaultValue={store.tasksAverageSelectedStudentGit}
-          onChange={selectOnChangeStudentGit}
-          onSearch={selectOnSearchStudentGit}
-          filterOption={(input: any, option: any) =>
-            (option?.label ?? "").toLowerCase().includes(input.toLowerCase())
-          }
-          options={studentsGithubIDSelect}
-        />
-        <Radio.Group
-          value={store.tasksAverageSelectedWeight}
-          onChange={handleWeightChange}
-        >
-          <Radio.Button value="without Weight">without Weight</Radio.Button>
-          <Radio.Button value="with Weight">with Weight</Radio.Button>
-        </Radio.Group>
+        <div className={styles.selectContainer}>
+          <Select
+            className={styles.selectTag}
+            showSearch
+            placeholder="Select a type"
+            optionFilterProp="children"
+            defaultValue={store.tasksAverageSelectedTag}
+            onChange={selectOnChangeTag}
+            onSearch={selectOnSearchTag}
+            filterOption={(input: any, option: any) =>
+              (option?.label ?? "").toLowerCase().includes(input.toLowerCase())
+            }
+            options={optionsSelectTag}
+          />
+          <Select
+            className={styles.selectStudentGit}
+            showSearch
+            placeholder="Select a type"
+            optionFilterProp="children"
+            defaultValue={store.tasksAverageSelectedStudentGit}
+            onChange={selectOnChangeStudentGit}
+            onSearch={selectOnSearchStudentGit}
+            filterOption={(input: any, option: any) =>
+              (option?.label ?? "").toLowerCase().includes(input.toLowerCase())
+            }
+            options={studentsGithubIDSelect}
+          />
+        </div>
+        <div className={styles.switchContainter}>
+          <Switch
+            className={styles.switchWeight}
+            onChange={onChangeSwithWeight}
+            defaultChecked={store.tasksAverageSelectedWeight === 'with Weight'}
+          />
+          <p className={styles.switchName}>Weight</p>
+        </div>
       </div>
       <div>{AverageAndMaxPlot()}</div>
     </>

@@ -10,6 +10,38 @@
   text-align: center;
 }
 
+.optionContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.selectContainer {
+  display: flex;
+  column-gap: 20px;
+  padding-bottom: 10px;
+}
+
 .selectStudentGit {
   width: 165px;
+  margin-bottom: 20px;
+}
+
+.selectMentorsName {
+  width: 250px;
+  margin-bottom: 20px;
+}
+
+.switchContainter {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.switchSelectors {
+  margin: auto 0;
+}
+
+.switchName {
+  margin: auto 0;
+  text-align: center;
 }

@@ -47,9 +47,21 @@ export const PopoverContentStudentsPlaceHistory = () => {
         Student Place History: Score Comparison
       </p>
       <p className={styles.popoverText}>
-        Changes to student rankings are made based on tasks that have
-        passed their deadlines. Tasks that are still open for submission do
-        not impact the calculation of rankings.
+        Changes to student rankings are made based on tasks that have passed
+        their deadlines. Tasks that are still open for submission do not impact
+        the calculation of rankings.
+      </p>
+    </div>
+  );
+};
+
+export const PopoverContentMentorsMain = () => {
+  return (
+    <div className={styles.popoverContainer}>
+      <p className={styles.popoverTitle}>Student-to-Mentor Ratio</p>
+      <p className={styles.popoverText}>
+        Count of Mentors with Equal Student Count: The number of mentors who
+        have an identical number of students assigned to them.
       </p>
     </div>
   );

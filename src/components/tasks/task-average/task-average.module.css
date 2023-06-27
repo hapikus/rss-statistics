@@ -1,3 +1,19 @@
+.title {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.optionContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.selectContainer {
+  display: flex;
+  column-gap: 20px;
+  padding-bottom: 10px;
+}
+
 .selectTag {
   width: 165px;
 }
@@ -6,13 +22,17 @@
   width: 165px;
 }
 
-.optionContainer {
+.switchContainter {
   display: flex;
-  column-gap: 30px;
-  padding-bottom: 10px;
+  flex-direction: row;
+  gap: 10px;
 }
 
-.title {
-  margin-top: 5px;
+.switchWeight {
+  margin: auto 0;
+}
+
+.switchName {
+  margin: auto 0;
   text-align: center;
 }

@@ -140,7 +140,7 @@ const MentorsStudentsOverview = () => {
   return (
     <>
       <Title className={styles.title} level={2}>
-        Scores of Students in Group
+        Students Scores in Mentor Group
       </Title>
       <div className={styles.optionContainer}>
         <Select

@@ -90,7 +90,7 @@ const TasksScore = () => {
   return (
     <>
       <Title className={styles.title} level={2}>
-        Distribution of scores
+        Distribution of points
       </Title>
       <div className={styles.optionContainer}>
         <Select

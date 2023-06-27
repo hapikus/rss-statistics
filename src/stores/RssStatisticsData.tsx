@@ -108,12 +108,28 @@ class Store {
 
   // students
   studentsGeographySelected: string = "";
+  studentsPlaceHistorySwitcher: string = 'studentSeletor';
+  studentsPlaceHistorySelectedStudentGitBack = "";
+  studentsPlaceHistorMentorSelected = "";
+  studentsPlaceHistorMentorIdSelected = "";
   setStudentsGeographySelected = action((country: string) => {
     this.studentsGeographySelected = country;
   });
-  setStudentsPlaceHistorySelectedStudentGit = action((name: string) => {
+  setStudentsPlaceHistorySelectedStudentGit = action((name: any) => {
     this.studentsPlaceHistorySelectedStudentGit = name;
   })
+  setStudentsPlaceHistorySelectedStudentGitBack = action((name: string) => {
+    this.studentsPlaceHistorySelectedStudentGitBack = name;
+  });
+  setStudentsPlaceHistorySwitcher = action((value: string) => {
+    this.studentsPlaceHistorySwitcher = value;
+  });
+  setStudentsPlaceHistorMentorSelected = action((mentor: string) => {
+    this.studentsPlaceHistorMentorSelected = mentor;
+  });
+  setStudentsPlaceHistorMentorIdSelected = action((mentorId: string) => {
+    this.studentsPlaceHistorMentorIdSelected = mentorId;
+  });
 
   // tasks
   tasksMainSelectedTag = "test";

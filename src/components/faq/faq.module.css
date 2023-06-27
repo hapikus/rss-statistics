@@ -1,4 +1,14 @@
 .title {
-    margin-top: 5px;
-    text-align: center;
-  }
+  margin-top: 5px;
+  text-align: center;
+}
+
+.childrenTitle {
+  font-size: 22px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.childrenText {
+  font-size: 18px;
+}

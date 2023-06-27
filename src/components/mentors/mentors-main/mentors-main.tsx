@@ -3,6 +3,9 @@ import { observer } from "mobx-react-lite";
 import { Typography } from "antd";
 import { Pie } from '@ant-design/plots';
 
+import PopoverButton from '../../global/PopoverButton';
+import { PopoverContentMentorsMain } from '../../global/PopoverBlocks';
+
 import store from "../../../stores/RssStatisticsData";
 import styles from "./mentors-main.module.css";
 
@@ -12,10 +15,10 @@ const { Title } = Typography;
 const MentorsMainPie = () => {
   const mentorsCount: any = [];
   let mentor: any;
-  for ( mentor of Object.values(store.mentorsJson)) {
-    mentorsCount[Object.keys(mentor.students).length - 1] =     
-      ( mentorsCount[Object.keys(mentor.students).length - 1] || 0) + 1;
-    }
+  for (mentor of Object.values(store.mentorsJson)) {
+    mentorsCount[mentor.students.length - 1] =
+      (mentorsCount[mentor.students.length - 1] || 0) + 1;
+  }
   const data: any = [];
   mentorsCount.forEach((item: any, index: number) => {
     data.push({
@@ -50,7 +53,6 @@ const MentorsMainPie = () => {
     tooltip: {
       formatter: (mentorm: any) => {
         return { name: 'Students', value: `${mentorm.name}` }
-          // { name: 'Students', value: `${mentorm.value}` },
       },
     },
   };
@@ -61,10 +63,13 @@ const MentorsMain = () => {
   if (store.isLoad === false) {
     return <div>Loading...</div>;
   }
-  return (<>      
-  <Title className={styles.title} level={2}>
-    Mentors overview
-  </Title>
+  return (<>  
+  <div className={styles.titleContainter}>
+    <Title className={styles.title} level={2}>
+      Student-to-Mentor Ratio
+    </Title>
+    <PopoverButton content={<PopoverContentMentorsMain />} />
+  </div>    
   <div>
     {MentorsMainPie()}
   </div>

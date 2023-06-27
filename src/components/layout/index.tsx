@@ -79,13 +79,13 @@ const items: MenuItem[] = [
         <TeamOutlined />
       ),
       getItem(
-        <Link to="/mentors-overview">Students-mentor</Link>,
+        <Link to="/mentors-overview">Mentor Group</Link>,
         "9",
         <BlockOutlined />
       ),
     ]
   ),
-  getItem(<Link to="/faq">FAQ</Link>, "10", <QuestionCircleOutlined />),
+  getItem(<Link to="/faq">Description</Link>, "10", <QuestionCircleOutlined />),
   getItem(<Link to="/about">About</Link>, "11", <InfoCircleOutlined />),
 ];
 
@@ -145,7 +145,7 @@ const Layout: React.FC = () => {
           >
             <div className={styles.headerCont}>
               <Title className={styles.title} level={2}>JSFE2023Q1</Title>
-              <div className={styles.lastUpdateText}>Last update: 26.06.23</div>
+              <div className={styles.lastUpdateText}>Last update: 27.06.23</div>
             </div>
              
           </LayoutAntd.Header>
