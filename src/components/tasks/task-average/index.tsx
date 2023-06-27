@@ -50,7 +50,7 @@ const AverageAndMaxPlot = () => {
       let peopleBetterThanStudent = 0;
       let taskScore: any;
       let taskScorePeople: any;
-      for ([taskScore, taskScorePeople]  of Object.entries(task.scoreObj)) {
+      for ([taskScore, taskScorePeople] of Object.entries(task.scoreObj)) {
         if (+taskScore >= studentScore) {
           peopleBetterThanStudent += taskScorePeople;
         }
@@ -63,7 +63,9 @@ const AverageAndMaxPlot = () => {
         studentScore: weightOpt
           ? studentScore
           : studentScore * task.scoreWeight,
-        inTheTop: peopleBetterThanStudent ? ((peopleBetterThanStudent / task.totalPeople) * 100).toFixed(0) : 0,
+        inTheTop: peopleBetterThanStudent
+          ? ((peopleBetterThanStudent / task.totalPeople) * 100).toFixed(0)
+          : 0,
         maxScore: weightOpt ? task.maxScore : task.maxScore * task.scoreWeight,
       });
       maxTaskScore = Math.max(
@@ -207,7 +209,7 @@ const AverageAndMaxPlot = () => {
                   {tooltipData.studentScore}
                 </p>
                 <p className={styles.tooltipText}>
-                  Ranked in the Top: {tooltipData.inTheTop}%
+                  {tooltipData.inTheTop}% of top
                 </p>
               </>
             )}
