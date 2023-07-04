@@ -1,8 +1,7 @@
 import React from "react";
 import { observer } from "mobx-react-lite";
 import { WordCloud } from "@ant-design/plots";
-import { Typography, Popover, Button } from "antd";
-import { QuestionCircleOutlined } from "@ant-design/icons";
+import { Typography } from "antd";
 
 import PopoverButton from "../global/PopoverButton";
 import { PopoverContentStatisticsMain } from "../global/PopoverBlocks";

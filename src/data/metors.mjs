@@ -1,6 +1,6 @@
 import {saveFile} from "./fileOperation.mjs";
 
-export function mentorJson(students) {
+function mentorJson(students) {
   const mentors = {}
   students.forEach((student) => {
     if (student?.mentor) {

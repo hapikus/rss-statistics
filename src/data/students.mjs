@@ -191,8 +191,8 @@ function studentsScoreChangingJson(studentData, scheduleData) {
 }
 
 export function studentsInfo(studentData, scheduleData, NumberOfTheTopCountry, minimumPeopleFromCity) {
-  // createStudentsNameList(studentData) // 'students/student-name.csv'
-  // getStudentConst(studentData, NumberOfTheTopCountry, minimumPeopleFromCity);
+  createStudentsNameList(studentData) // 'students/student-name.csv'
+  getStudentConst(studentData, NumberOfTheTopCountry, minimumPeopleFromCity);
   studentsScoreChangingJson(studentData, scheduleData);
 }
 
