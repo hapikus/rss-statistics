@@ -6,17 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="cde9390b-717c-4d1b-b548-5e80d32f68d3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../../public/data/mentors.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../public/data/mentors.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../public/data/studentConst.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../public/data/studentConst.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../public/data/studentPlaceHistory.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../public/data/studentPlaceHistory.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../public/data/tasks.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../public/data/tasks.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../public/data/tasksResults.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../public/data/tasksResults.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../public/data/tasksTag.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../public/data/tasksTag.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../components/layout/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../components/layout/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/metors.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/metors.mjs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/schedule.json" beforeDir="false" afterPath="$PROJECT_DIR$/schedule.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/score.json" beforeDir="false" afterPath="$PROJECT_DIR$/score.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/split-all-data.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/split-all-data.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/students.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/students.mjs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/students/student-name.csv" beforeDir="false" afterPath="$PROJECT_DIR$/students/student-name.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -109,6 +106,10 @@
       <workItem from="1687850094737" duration="200000" />
       <workItem from="1687861210710" duration="595000" />
       <workItem from="1688470753810" duration="882000" />
+      <workItem from="1688718091736" duration="658000" />
+      <workItem from="1688980819879" duration="11000" />
+      <workItem from="1689059704686" duration="18000" />
+      <workItem from="1689239387584" duration="50000" />
     </task>
     <servers />
   </component>

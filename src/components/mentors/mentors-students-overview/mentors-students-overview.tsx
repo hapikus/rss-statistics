@@ -77,8 +77,8 @@ function createDataMentorsStudents(): any {
       row["averageScore"] = task.averageScore.toFixed(2);
       let count = 1;
       const mentor = store.mentorsJson[store.mentorStudentsSelectedMentorId];
-      let studentScore: any = 0;
       mentor.students.forEach((student: any) => {
+        let studentScore: any = 0;
         let taskResult: any;
         for (taskResult of store.tasksResultsJson[student]) {
           if (taskResult.courseTaskId === task.id) {
