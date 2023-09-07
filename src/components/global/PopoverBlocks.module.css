@@ -11,3 +11,11 @@
 .popoverText {
   font-size: 16px;
 }
+
+.textMiddle {
+  text-align: center;
+}
+
+.buttomBorder {
+  border-bottom: 1px dotted black;
+}

@@ -1,65 +1,65 @@
 {
   "studentsTotal": 8180,
   "studentsStatus": {
-    "isActive": 1226,
-    "notActive": 6954
+    "isActive": 528,
+    "notActive": 7652
   },
   "studentsGender": {
     "Female": 2575,
-    "Male": 5392,
-    "Unknown": 213
+    "Male": 5389,
+    "Unknown": 216
   },
   "studentsCountry": [
     [
       "Belarus",
-      2704
+      2694
     ],
     [
       "Russia",
-      2363
+      2365
     ],
     [
       "Ukraine",
-      738
+      736
     ],
     [
       "Kazakhstan",
-      463
+      462
     ],
     [
       "Poland",
-      435
+      443
     ],
     [
       "Uzbekistan",
-      291
+      289
     ],
     [
       "Georgia",
-      219
+      218
     ]
   ],
   "studentsCity": {
     "Belarus": {
-      "Minsk": 1453,
-      "Gomel": 157,
-      "Могилёв": 10,
+      "Minsk": 1445,
       "Soligorsk": 13,
-      "Novopolotsk": 25,
+      "Могилёв": 10,
+      "Novopolotsk": 26,
+      "Brest": 157,
+      "Gomel": 158,
       "Baranovichi": 15,
-      "Беларусь": 31,
-      "Bobruisk": 7,
-      "Brest": 160,
       "Mogilev": 115,
-      "Borisov": 13,
-      "Vitebsk": 71,
+      "Pinsk": 20,
+      "Беларусь": 31,
+      "Orsha": 7,
       "Минск": 95,
       "Grodno": 70,
-      "Orsha": 7,
-      "Pinsk": 20,
-      "Belarus": 198,
-      "Hrodna": 21,
+      "Vitebsk": 71,
+      "Bobruisk": 7,
+      "Belarus": 197,
+      "Borisov": 13,
       "Homel": 11,
+      "Hrodna": 21,
       "Zhlobin": 10,
       "Lida": 9,
       "Гродно": 7,
@@ -70,49 +70,49 @@
       "Гомель": 14
     },
     "Russia": {
-      "Samara": 52,
-      "Moscow": 485,
-      "Togliatti": 14,
-      "Ufa": 44,
-      "Saint Petersburg": 310,
-      "Yekaterinburg": 30,
-      "Krasnodar": 59,
-      "Vologda": 11,
       "Omsk": 25,
-      "St Petersburg": 30,
+      "Nizhny Novgorod": 49,
+      "Ufa": 43,
+      "Krasnodar": 59,
       "Kaliningrad": 26,
-      "Perm": 15,
-      "Kazan": 65,
-      "Nizhny Novgorod": 48,
-      "Yaroslavl": 15,
-      "Volgograd": 24,
+      "Samara": 52,
+      "Saint Petersburg": 312,
+      "Togliatti": 14,
+      "Moscow": 484,
+      "Kazan": 64,
       "Санкт-Петербург": 34,
       "Voronezh": 25,
-      "Makhachkala": 7,
-      "Chelyabinsk": 23,
-      "Novosibirsk": 49,
-      "Ekaterinburg": 31,
-      "Khabarovsk": 12,
+      "Vologda": 11,
       "Krasnoyarsk": 16,
-      "Penza": 9,
+      "Rostov-on-Don": 21,
+      "Perm": 15,
+      "Ekaterinburg": 31,
       "Lipetsk": 9,
+      "Novosibirsk": 49,
+      "Khabarovsk": 12,
+      "Chelyabinsk": 23,
+      "Yekaterinburg": 30,
+      "Penza": 9,
+      "Volgograd": 24,
+      "Yaroslavl": 15,
+      "St Petersburg": 30,
       "Tyumen": 23,
-      "Rostov-on-Don": 22,
-      "Tomsk": 12,
-      "Barnaul": 10,
       "Tula": 8,
-      "Kirov": 10,
-      "Russia": 109,
+      "Tomsk": 12,
+      "Izhevsk": 36,
+      "Makhachkala": 7,
       "Saratov": 22,
-      "Izhevsk": 35,
-      "Kaluga": 9,
-      "Vladivostok": 10,
-      "Cheboksary": 10,
-      "Taganrog": 7,
-      "Sankt Petersburg": 14,
-      "Ryazan": 12,
-      "Москва": 21,
+      "Kirov": 11,
+      "Москва": 22,
+      "Barnaul": 10,
       "Stavropol": 9,
+      "Vladivostok": 10,
+      "Kaluga": 9,
+      "Taganrog": 7,
+      "Cheboksary": 10,
+      "Sankt Petersburg": 13,
+      "Russia": 107,
+      "Ryazan": 12,
       "Tambov": 7,
       "Irkutsk": 17,
       "Naberezhnye Chelny": 8,
@@ -126,58 +126,57 @@
       "Grozny": 11
     },
     "Ukraine": {
-      "Kyiv": 127,
-      "Kharkiv": 83,
+      "Kyiv": 126,
+      "Ukraine": 89,
       "Zaporizhzhia": 16,
-      "Mykolaiv": 14,
-      "Ukraine": 88,
       "Dnipro": 39,
-      "Kiev": 27,
+      "Mykolaiv": 15,
+      "Kharkiv": 83,
       "Lviv": 51,
-      "Киев": 7,
+      "Ódessa": 12,
+      "Kiev": 27,
       "Khmelnytskyi": 9,
       "Odesa": 26,
-      "Ódessa": 12,
-      "Odessa": 11,
       "Ivano-Frankivsk": 8,
+      "Odessa": 11,
       "Poltava": 8,
       "Vinnytsia": 9,
       "Cherkasy": 7,
       "Харьков": 7
     },
     "Kazakhstan": {
-      "Shymkent": 8,
+      "Shymkent": 7,
       "Almaty": 154,
       "Astana": 102,
-      "Aktau": 7,
       "Karaganda": 36,
-      "Pavlodar": 10,
-      "Kazakhstan": 38,
+      "Aktau": 7,
       "Uralsk": 11,
+      "Kazakhstan": 38,
+      "Pavlodar": 10,
       "Atyrau": 11,
       "Kostanay": 7,
       "Nur-Sultan": 16
     },
     "Poland": {
-      "Wrocław": 52,
-      "Warsaw": 83,
-      "Łódź": 13,
-      "Kraków": 61,
-      "Poznań": 37,
-      "Białystok": 25,
+      "Wrocław": 54,
+      "Łódź": 14,
+      "Białystok": 26,
+      "Warsaw": 86,
+      "Gdańsk": 46,
       "Warszawa": 53,
-      "Gdańsk": 46
+      "Kraków": 63,
+      "Poznań": 36
     },
     "Uzbekistan": {
-      "Tashkent": 195,
+      "Tashkent": 194,
       "Fergana": 9,
-      "Uzbekistan": 22,
+      "Uzbekistan": 21,
       "Toshkent": 7,
       "Uzbekiston": 7
     },
     "Georgia": {
-      "Tbilisi": 114,
-      "Batumi": 89
+      "Batumi": 88,
+      "Tbilisi": 113
     }
   }
 }

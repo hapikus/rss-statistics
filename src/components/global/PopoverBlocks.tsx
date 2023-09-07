@@ -16,15 +16,15 @@ export const PopoverContentStatisticsMain = () => {
 export const PopoverContentStudentsMain = () => {
   return (
     <div>
-      <div className={styles.popoverContainer}>
+      <div className={`${styles.popoverContainer} ${styles.buttomBorder}`}>
         <p className={styles.popoverTitle}>% of Active students</p>
-        <p className={styles.popoverText}>
+        <p className={`${styles.popoverText} ${styles.textMiddle}`}>
           Percentage of students with an "Active" status.
         </p>
       </div>
-      <div className={styles.popoverContainer}>
+      <div className={`${styles.popoverContainer} ${styles.buttomBorder}`}>
         <p className={styles.popoverTitle}>ChatGPT's gender prediction</p>
-        <p className={styles.popoverText}>
+        <p className={`${styles.popoverText} ${styles.textMiddle}`}>
           ChatGPT's gender prediction based on students' names
         </p>
       </div>
@@ -32,7 +32,7 @@ export const PopoverContentStudentsMain = () => {
         <p className={styles.popoverTitle}>
           Distribution of students by countries
         </p>
-        <p className={styles.popoverText}>
+        <p className={`${styles.popoverText} ${styles.textMiddle}`}>
           Pie chart showcasing the distribution of students by countries.
         </p>
       </div>

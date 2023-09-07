@@ -23,6 +23,8 @@ const selectOnSearchMentor = (value: string) => {
   console.log("selectOnSearchMentor:", value);
 };
 
+const inactiveStudents: Set<string> = new Set();
+
 function createColumnsMentorsStudents(): any {
   const columns: any = [
     {
@@ -44,23 +46,25 @@ function createColumnsMentorsStudents(): any {
       store.setMentorStudentsSelectedMentorId(mentorId);
       let count = 1;
       mentor.students.forEach((studentName: any) => {
-        columns.push({
-          title: studentName,
-          dataIndex: `student.name ${count}`,
-          key: `student.name ${count}`,
-          render: (value: any, record: any) => (
-            <span
-              style={{
-                backgroundColor: getBackgroundColor(value, record),
-                padding: "5px",
-              }}
-            >
-              {value}
-            </span>
-          ),
-        });
-        count += 1;
-      })
+        if (!inactiveStudents.has(studentName)) {
+          columns.push({
+            title: studentName,
+            dataIndex: `student.name ${count}`,
+            key: `student.name ${count}`,
+            render: (value: any, record: any) => (
+              <span
+                style={{
+                  backgroundColor: getBackgroundColor(value, record),
+                  padding: "5px",
+                }}
+              >
+                {value}
+              </span>
+            ),
+          });
+          count += 1;
+        }
+      });
     }
   }
   return columns;
@@ -80,10 +84,15 @@ function createDataMentorsStudents(): any {
       mentor.students.forEach((student: any) => {
         let studentScore: any = 0;
         let taskResult: any;
-        for (taskResult of store.tasksResultsJson[student]) {
-          if (taskResult.courseTaskId === task.id) {
-            studentScore = taskResult.score;
-            break;
+        if (!store.tasksResultsJson[student]) {
+          inactiveStudents.add(student)
+        }
+        if (store.tasksResultsJson[student]) {
+          for (taskResult of store.tasksResultsJson[student]) {
+            if (taskResult.courseTaskId === task.id) {
+              studentScore = taskResult.score;
+              break;
+            }
           }
         }
         row[`student.name ${count}`] = studentScore;

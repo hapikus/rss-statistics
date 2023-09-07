@@ -31,12 +31,14 @@ const DistributionColumn = () => {
   store.taskJson.forEach((task: any) => {
     if (task.name === store.tasksScoreSelectedTask) {
       for (let [key, value] of Object.entries(task.scoreObj)) {
-        data.push({
-          score: key,
-          students: value,
-        })
-        totalStudents += value;
-        columnsCount += 1;
+        if ( +key >= 0) {
+          data.push({
+            score: key,
+            students: value,
+          })
+          totalStudents += value;
+          columnsCount += 1;
+        }
       }
     }
   }); 
