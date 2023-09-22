@@ -5,18 +5,18 @@
     "notActive": 7652
   },
   "studentsGender": {
-    "Male": 5388,
-    "Female": 2575,
-    "Unknown": 217
+    "Female": 2574,
+    "Male": 5386,
+    "Unknown": 220
   },
   "studentsCountry": [
     [
       "Belarus",
-      2694
+      2695
     ],
     [
       "Russia",
-      2365
+      2364
     ],
     [
       "Ukraine",
@@ -24,11 +24,11 @@
     ],
     [
       "Kazakhstan",
-      462
+      463
     ],
     [
       "Poland",
-      443
+      442
     ],
     [
       "Uzbekistan",
@@ -36,30 +36,30 @@
     ],
     [
       "Georgia",
-      218
+      219
     ]
   ],
   "studentsCity": {
     "Belarus": {
-      "Gomel": 158,
-      "Minsk": 1445,
-      "Soligorsk": 13,
+      "Minsk": 1447,
       "Brest": 157,
-      "Baranovichi": 15,
-      "Mogilev": 115,
       "Novopolotsk": 26,
-      "Беларусь": 31,
-      "Могилёв": 10,
-      "Pinsk": 20,
+      "Mogilev": 115,
       "Vitebsk": 71,
       "Borisov": 13,
-      "Bobruisk": 7,
-      "Минск": 95,
+      "Baranovichi": 15,
       "Orsha": 7,
+      "Gomel": 157,
+      "Минск": 95,
+      "Soligorsk": 13,
+      "Беларусь": 31,
+      "Pinsk": 20,
+      "Могилёв": 10,
+      "Zhlobin": 10,
+      "Bobruisk": 7,
       "Belarus": 197,
       "Homel": 11,
       "Grodno": 70,
-      "Zhlobin": 10,
       "Hrodna": 21,
       "Lida": 9,
       "Гродно": 7,
@@ -70,38 +70,38 @@
       "Гомель": 14
     },
     "Russia": {
-      "Omsk": 25,
-      "Moscow": 484,
-      "Ufa": 43,
+      "Vologda": 11,
       "Krasnodar": 59,
+      "Saint Petersburg": 312,
+      "Moscow": 482,
+      "Санкт-Петербург": 34,
+      "Togliatti": 14,
+      "Voronezh": 25,
+      "Samara": 52,
+      "Ekaterinburg": 31,
+      "Krasnoyarsk": 16,
+      "St Petersburg": 30,
+      "Kazan": 64,
+      "Omsk": 25,
+      "Novosibirsk": 49,
+      "Ufa": 43,
       "Nizhny Novgorod": 49,
       "Kaliningrad": 26,
-      "Санкт-Петербург": 34,
-      "Samara": 52,
-      "Saint Petersburg": 312,
-      "Togliatti": 14,
-      "Krasnoyarsk": 16,
-      "Kazan": 64,
-      "Rostov-on-Don": 21,
-      "Voronezh": 25,
-      "Vologda": 11,
-      "Perm": 15,
-      "Tyumen": 23,
-      "Ekaterinburg": 31,
-      "Lipetsk": 9,
-      "Yekaterinburg": 30,
-      "Novosibirsk": 49,
       "Penza": 9,
-      "Chelyabinsk": 23,
-      "Yaroslavl": 15,
       "Volgograd": 24,
-      "St Petersburg": 30,
+      "Rostov-on-Don": 21,
+      "Yekaterinburg": 30,
+      "Perm": 15,
+      "Yaroslavl": 15,
+      "Tyumen": 23,
+      "Lipetsk": 9,
+      "Chelyabinsk": 23,
+      "Tula": 8,
+      "Makhachkala": 7,
       "Khabarovsk": 12,
       "Saratov": 22,
-      "Tula": 8,
-      "Izhevsk": 36,
       "Tomsk": 12,
-      "Makhachkala": 7,
+      "Izhevsk": 36,
       "Kirov": 11,
       "Москва": 22,
       "Stavropol": 9,
@@ -126,12 +126,12 @@
       "Grozny": 11
     },
     "Ukraine": {
-      "Kyiv": 126,
-      "Zaporizhzhia": 16,
       "Dnipro": 39,
-      "Ukraine": 89,
-      "Mykolaiv": 15,
       "Kharkiv": 83,
+      "Kyiv": 126,
+      "Ukraine": 89,
+      "Zaporizhzhia": 16,
+      "Mykolaiv": 15,
       "Lviv": 51,
       "Kiev": 27,
       "Ódessa": 12,
@@ -146,26 +146,26 @@
     },
     "Kazakhstan": {
       "Shymkent": 7,
-      "Almaty": 154,
       "Astana": 102,
-      "Karaganda": 36,
+      "Almaty": 154,
+      "Karaganda": 37,
+      "Kazakhstan": 38,
       "Aktau": 7,
       "Uralsk": 11,
-      "Kazakhstan": 38,
       "Pavlodar": 10,
       "Atyrau": 11,
       "Kostanay": 7,
       "Nur-Sultan": 16
     },
     "Poland": {
-      "Wrocław": 54,
-      "Warsaw": 86,
-      "Łódź": 14,
       "Białystok": 26,
-      "Warszawa": 53,
-      "Kraków": 63,
-      "Gdańsk": 46,
-      "Poznań": 36
+      "Wrocław": 54,
+      "Warsaw": 87,
+      "Warszawa": 52,
+      "Łódź": 14,
+      "Gdańsk": 45,
+      "Poznań": 36,
+      "Kraków": 63
     },
     "Uzbekistan": {
       "Tashkent": 194,
@@ -175,8 +175,8 @@
       "Uzbekiston": 7
     },
     "Georgia": {
-      "Batumi": 88,
-      "Tbilisi": 113
+      "Tbilisi": 113,
+      "Batumi": 89
     }
   }
 }
