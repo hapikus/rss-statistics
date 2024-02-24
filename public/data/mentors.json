@@ -1,1654 +1,1230 @@
 {
-  "3504": {
-    "githubId": "golubeva-webmaster",
-    "name": "Marina Golubeva",
+  "3858": {
+    "githubId": "filonushka",
+    "name": "Valeriya Filonova",
     "students": [
-      "a-v-gor",
-      "vikki100621",
-      "valerymatskevich",
-      "dadonov"
+      "bentrend"
     ]
   },
-  "3522": {
-    "githubId": "inqui05",
-    "name": "Artsiom Tratsiuk",
+  "3931": {
+    "githubId": "matthewthewizzard",
+    "name": "Mikhail Matveev",
     "students": [
-      "katrin-brest",
-      "zixail28"
+      "riariver",
+      "kirkor313",
+      "elena-dogman"
     ]
   },
-  "3614": {
-    "githubId": "valerydluski",
-    "name": "Valery Dluski",
+  "3969": {
+    "githubId": "mikita-kandratsyeu",
+    "name": "Mikita Kandratsyeu",
     "students": [
-      "haslie22",
-      "alikri",
-      "hereeast",
-      "katerina-kor"
+      "yourunb",
+      "giotu",
+      "goranastasii"
     ]
   },
-  "3629": {
-    "githubId": "andron13",
-    "name": "Andrej Podlubnyj",
+  "3971": {
+    "githubId": "blackymax",
+    "name": "MAKSIM CHARNOU",
     "students": [
-      "color-zebra",
-      "valeriyaglx",
-      "quiddlee",
-      "stroich",
-      "tedzury",
-      "barrydilan",
-      "alexandra376"
+      "stasdevel"
     ]
   },
-  "3630": {
-    "githubId": "wiijoy",
-    "name": "Vitalii Rogozin",
-    "students": [
-      "krkate",
-      "kirilldemyanenko",
-      "v154254",
-      "vi-rossiyskaya"
-    ]
-  },
-  "3631": {
-    "githubId": "helenakrasnova",
-    "name": "Alena Krasnova",
-    "students": [
-      "andrew-nes",
-      "razumaumikita"
-    ]
-  },
-  "3634": {
-    "githubId": "tanyasamal",
-    "name": "Tatsiana Samal",
-    "students": [
-      "vladklen",
-      "sandrainporto"
-    ]
-  },
-  "3640": {
-    "githubId": "yuliyaminsk",
-    "name": "Yuliya Niaverava",
-    "students": [
-      "denys-bilonozhko",
-      "damaloonazhret",
-      "p0lluxstar"
-    ]
-  },
-  "3641": {
-    "githubId": "mikita-liaukovich-epam",
-    "name": "Mikita Liaukovich",
-    "students": [
-      "kagapitova",
-      "zerom22"
-    ]
-  },
-  "3642": {
-    "githubId": "alepashkou",
-    "name": "Aliaksandr Pashkou",
-    "students": [
-      "olitera",
-      "acheniche",
-      "ekaterynavolkova",
-      "seagirl1110"
-    ]
-  },
-  "3643": {
-    "githubId": "annaignatova",
-    "name": "Anna Ignatova",
-    "students": [
-      "mamont79",
-      "prigozhaya",
-      "m5production"
-    ]
-  },
-  "3644": {
-    "githubId": "spaceragga",
-    "name": "Ivan Mikhalchanka",
-    "students": [
-      "perseus-sergey",
-      "kate-shepel",
-      "milashakas",
-      "pauluswhite"
-    ]
-  },
-  "3645": {
-    "githubId": "kukushkina",
-    "name": "Inesa Kukushkina",
-    "students": [
-      "siarheikliazovich"
-    ]
-  },
-  "3647": {
-    "githubId": "mercartem",
-    "name": "Artemiy Gudz",
-    "students": [
-      "phoinixru",
-      "svk-man",
-      "sosukii"
-    ]
-  },
-  "3648": {
-    "githubId": "asar2030",
-    "name": "Asar Akhmetbekov",
-    "students": [
-      "popovaolha"
-    ]
-  },
-  "3649": {
-    "githubId": "mitjasha",
-    "name": "Dzmitry Shakhrai",
-    "students": [
-      "oksandra",
-      "kain4ra",
-      "eordan",
-      "anastasiyaalisenok",
-      "linyshka",
-      "whiterabbit8",
-      "gruntovgd",
-      "maximiloi",
-      "tbandelikova"
-    ]
-  },
-  "3650": {
-    "githubId": "excluz1v",
-    "name": "Dmitriy Gannochka",
-    "students": [
-      "tauadam",
-      "tematut"
-    ]
-  },
-  "3651": {
-    "githubId": "dzmitrynz",
-    "name": "MitryNz",
-    "students": [
-      "maxsimusprime",
-      "olegbw",
-      "milasem",
-      "nadiianesterova"
-    ]
-  },
-  "3652": {
-    "githubId": "aleksandryermolaev",
-    "name": "Aleksandr Yermolaev",
-    "students": [
-      "h3nnessey",
-      "huntertigerx",
-      "kostik-omsk"
-    ]
-  },
-  "3653": {
-    "githubId": "mikaleinik",
-    "name": "Mikhail Aleinik",
-    "students": [
-      "surface74",
-      "makaevaelena",
-      "vladimirsobbolev",
-      "al5t",
-      "vladopot"
-    ]
-  },
-  "3654": {
-    "githubId": "lizaveta01",
-    "name": "Liza Petrova",
-    "students": [
-      "iradzh",
-      "hotimpulse"
-    ]
-  },
-  "3655": {
-    "githubId": "wolf-den1994",
-    "name": "Denis Karazan",
-    "students": [
-      "iamnkt",
-      "nvalkovich",
-      "elenamihailova"
-    ]
-  },
-  "3656": {
-    "githubId": "vanessagrapefruit",
-    "name": "Aliaksei Rachkouski",
-    "students": [
-      "5kazo4nik",
-      "hrn9",
-      "maleryvalery"
-    ]
-  },
-  "3657": {
-    "githubId": "boriskrasko",
-    "name": "Boris Krasko",
-    "students": [
-      "aliaksei-sl",
-      "alenzija",
-      "alinatsydzik",
-      "shep-js"
-    ]
-  },
-  "3659": {
-    "githubId": "asindeton",
-    "name": "Dzmitry Lehankou",
-    "students": [
-      "ivan-gav",
-      "nikolaykrishtopa",
-      "iozefavichus",
-      "dima92",
-      "ns-mamaev"
-    ]
-  },
-  "3660": {
-    "githubId": "lilithprimary",
-    "name": "Galia Iakusheva",
-    "students": [
-      "solosoft2000",
-      "r11ven",
-      "kushalvova"
-    ]
-  },
-  "3661": {
-    "githubId": "igor-kolyaskin",
-    "name": "Igor Kolyaskin",
-    "students": [
-      "andrewmik",
-      "taraikovich",
-      "borisnovi"
-    ]
-  },
-  "3662": {
-    "githubId": "tieriko",
-    "name": "Timofei Nazartsev",
-    "students": [
-      "vladsvir888",
-      "yomayo666",
-      "lidrail35",
-      "roman270488"
-    ]
-  },
-  "3663": {
-    "githubId": "rubiaqute",
-    "name": "Inga Baranets",
-    "students": [
-      "kotokatu",
-      "vikkitorry",
-      "kirich8",
-      "aishsi"
-    ]
-  },
-  "3664": {
-    "githubId": "jirisimonov",
-    "name": "George Simonov",
-    "students": [
-      "adybah",
-      "deepenguin",
-      "aleksaroad",
-      "ashtotakoe",
-      "turn2river"
-    ]
-  },
-  "3665": {
-    "githubId": "algaabilesh",
-    "name": "Alga Abilesh",
-    "students": [
-      "katie-soft",
-      "slavapankov"
-    ]
-  },
-  "3666": {
-    "githubId": "jcdenton23",
-    "name": "Alisher Tashbulatov",
-    "students": [
-      "kris-vadi",
-      "natanchik"
-    ]
-  },
-  "3667": {
-    "githubId": "deadline2020",
-    "name": "Andrei Domkin",
-    "students": [
-      "mishakozarev",
-      "maryinfun",
-      "yuriy85",
-      "lappavel"
-    ]
-  },
-  "3668": {
-    "githubId": "margaryta-maletz",
-    "name": "Marharyta Malets",
-    "students": [
-      "miroslav-zarenkov",
-      "fedorenksei",
-      "nickbis",
-      "ginezisnwd"
-    ]
-  },
-  "3669": {
-    "githubId": "skywalker1996x",
-    "name": "Dmytro Chekhuta",
-    "students": [
-      "nyurasheva",
-      "zweroboy1",
-      "bo-mila",
-      "deep-logic2000"
-    ]
-  },
-  "3670": {
-    "githubId": "yarkin13",
-    "name": "Stanislav Yarkin",
-    "students": [
-      "dmitriy3305",
-      "veronikapavlova1993"
-    ]
-  },
-  "3671": {
-    "githubId": "merey27",
-    "name": "Merey Temirkas",
-    "students": [
-      "artemdolgopolov",
-      "seygorin"
-    ]
-  },
-  "3672": {
-    "githubId": "spanb4",
-    "name": "Dzmitry Yarmoshkin",
-    "students": [
-      "donstacky",
-      "user42022",
-      "gserdg",
-      "lustrochka"
-    ]
-  },
-  "3673": {
-    "githubId": "crepiks",
-    "name": "Sayazhan Onglassyn",
-    "students": [
-      "dayanych",
-      "horvar",
-      "dimash95"
-    ]
-  },
-  "3674": {
-    "githubId": "alisheyx-life",
-    "name": "Alisher Ijbuldin",
-    "students": [
-      "shakhzod235",
-      "visperas1703"
-    ]
-  },
-  "3675": {
-    "githubId": "romababok",
-    "name": "Roman Babok",
-    "students": [
-      "aciakr",
-      "anna-r-a",
-      "w1t1uv"
-    ]
-  },
-  "3676": {
-    "githubId": "tanyashulha",
-    "name": "Tatsiana Shulha",
-    "students": [
-      "geominerr",
-      "imcqueeni",
-      "boy-without-a-name",
-      "sergey-mak1"
-    ]
-  },
-  "3677": {
-    "githubId": "igor2000xp",
-    "name": "Igor Aniskevich",
-    "students": [
-      "voronovy",
-      "nastasyma",
-      "jnorwill",
-      "rahachova"
-    ]
-  },
-  "3678": {
-    "githubId": "malyshkin-vitali",
-    "name": "Vitali Malyshkin",
-    "students": [
-      "evgeniiyar"
-    ]
-  },
-  "3679": {
-    "githubId": "dmitriy-homza",
-    "name": "Dzmitry Homza",
-    "students": [
-      "ksu1ven",
-      "itzaur",
-      "maxxx1mhr",
-      "kislen"
-    ]
-  },
-  "3680": {
-    "githubId": "tsurhanau",
-    "name": "Yauheni Tsurhanau",
-    "students": [
-      "elenayrm"
-    ]
-  },
-  "3681": {
-    "githubId": "bobrysh",
-    "name": "Pavel Bobryshev",
-    "students": [
-      "kotangenss",
-      "mracoon"
-    ]
-  },
-  "3682": {
-    "githubId": "argyyyn",
-    "name": "Argynbek Ysmail",
-    "students": [
-      "tayan21",
-      "pivodur"
-    ]
-  },
-  "3683": {
-    "githubId": "96tm",
-    "name": "Viacheslav Smolentsev",
-    "students": [
-      "troay89",
-      "ina-davidziuk"
-    ]
-  },
-  "3684": {
-    "githubId": "neozhidak",
-    "name": "Dmitry Abramov",
-    "students": [
-      "elizavetarazumenko",
-      "linseaz",
-      "uladek"
-    ]
-  },
-  "3685": {
-    "githubId": "elizavetapanasiuk",
-    "name": "Lizaveta Panasiuk",
-    "students": [
-      "carphatiansnake",
-      "forsyterun"
-    ]
-  },
-  "3686": {
-    "githubId": "quiquek007",
-    "name": "Andrei Saiko",
-    "students": [
-      "mary-fe",
-      "sepotom",
-      "ylakhtin"
-    ]
-  },
-  "3687": {
-    "githubId": "tambovchanin",
-    "name": "Denis Shiriaev",
-    "students": [
-      "coracaodomundo",
-      "fault1err"
-    ]
-  },
-  "3688": {
-    "githubId": "alexanderdemchik",
-    "name": "Aliaksandr Dzemchyk",
-    "students": [
-      "elizabethvasilenko13",
-      "aliakseidonut",
-      "glebasusbp"
-    ]
-  },
-  "3689": {
-    "githubId": "viktoryia-liaukovich",
-    "name": "Viktoryia Liaukovich",
-    "students": [
-      "juliaavona",
-      "antonleshkovich"
-    ]
-  },
-  "3690": {
-    "githubId": "maximzmei",
-    "name": "Maksim Rynkov",
-    "students": [
-      "illia-sakharau",
-      "katerinamysl",
-      "kazymirt",
-      "katemihalovskaya"
-    ]
-  },
-  "3691": {
-    "githubId": "adenyx",
-    "name": "Dzianis Auramenka",
-    "students": [
-      "sadmearise",
-      "vladprogrim"
-    ]
-  },
-  "3692": {
-    "githubId": "ulyana-zh",
-    "name": "Uliana Zhivotenkova",
-    "students": [
-      "mnmsvlw",
-      "vikalubenets",
-      "katerina2010"
-    ]
-  },
-  "3693": {
-    "githubId": "yauhkaz",
-    "name": "Yauhen Kaziankou",
-    "students": [
-      "danilbogdanov",
-      "dartster",
-      "natteskrekkk"
-    ]
-  },
-  "3694": {
-    "githubId": "wrestler094",
-    "name": "Mikhail Kovalev",
-    "students": [
-      "paavveel",
-      "shchegolenkov",
-      "mialiokhin",
-      "noisekov",
-      "victoriaalekseeva"
-    ]
-  },
-  "3695": {
-    "githubId": "avor0n",
-    "name": "Andrey Voronin",
-    "students": [
-      "gorobchenko-k",
-      "mike-lebedev",
-      "culturecat89"
-    ]
-  },
-  "3696": {
-    "githubId": "bahnovak",
-    "name": "Roman Stelmashuk",
-    "students": [
-      "vitalyrk",
-      "ana-ma-web",
-      "igorgromykojs"
-    ]
-  },
-  "3697": {
-    "githubId": "viktarius",
-    "name": "Viktar Belski",
-    "students": [
-      "smit467bs",
-      "pasterzoom"
-    ]
-  },
-  "3698": {
-    "githubId": "elenaniksy",
-    "name": "Elena Nikonova",
-    "students": [
-      "luftkrabbe",
-      "nevold",
-      "severgun"
-    ]
-  },
-  "3699": {
-    "githubId": "zhannal",
-    "name": "Zhanna Sbitneva",
-    "students": [
-      "lesik2",
-      "irinaosp"
-    ]
-  },
-  "3700": {
-    "githubId": "annakulai",
-    "name": "Hanna Kulai",
-    "students": [
-      "fasty86",
-      "evgenklo",
-      "panakir"
-    ]
-  },
-  "3701": {
-    "githubId": "mihailmatveichuk",
-    "name": "Mikhail Matveichuk",
-    "students": [
-      "ekatrif",
-      "sheritsh",
-      "montek1o"
-    ]
-  },
-  "3702": {
-    "githubId": "alexger95",
-    "name": "Alex Ger",
-    "students": [
-      "sbaumgertner",
-      "jully13"
-    ]
-  },
-  "3704": {
-    "githubId": "uragun91",
-    "name": "Ivan Frolov",
-    "students": [
-      "amberlynn364",
-      "zena86"
-    ]
-  },
-  "3705": {
-    "githubId": "troitskiyandrew",
-    "name": "TROITCKII ANDREI",
-    "students": [
-      "allaprischepa",
-      "lizavr",
-      "fedko-zhenja"
-    ]
-  },
-  "3706": {
-    "githubId": "elias-fadeyev",
-    "name": "Ilya Fadzeyeu",
-    "students": [
-      "maxlisyanskiy",
-      "irinazhibul",
-      "eskovdmta"
-    ]
-  },
-  "3707": {
-    "githubId": "horndron",
-    "name": "Andrey Filippov",
-    "students": [
-      "volsvik",
-      "egorca6",
-      "oecorango",
-      "127zeppelin"
-    ]
-  },
-  "3708": {
-    "githubId": "nimlu-bot",
-    "name": "Sergey Nesterov",
-    "students": [
-      "wilden5",
-      "petrkanapelka",
-      "solidados"
-    ]
-  },
-  "3709": {
-    "githubId": "yurakuzmich",
-    "name": "Yury Kuzmich",
-    "students": [
-      "shoxakrshn",
-      "malikasadullaeva96"
-    ]
-  },
-  "3712": {
-    "githubId": "artykovdaniyar",
-    "name": "Daniiar Artykov",
-    "students": [
-      "bokievkhushnud",
-      "irinatsoi312"
-    ]
-  },
-  "3713": {
-    "githubId": "artsiomfando",
-    "name": "Artsiom Fando",
-    "students": [
-      "diegokitty",
-      "juliaholadava"
-    ]
-  },
-  "3714": {
-    "githubId": "kseniyamelnik",
-    "name": "Kseniya Melnik",
-    "students": [
-      "biarezkseniya",
-      "lazy-goose",
-      "vstezhko",
-      "artemhlopov"
-    ]
-  },
-  "3715": {
-    "githubId": "lebedev-023046",
-    "name": "Dmitry Lebedev",
-    "students": [
-      "akulove",
-      "midicable",
-      "dobroslov",
-      "ptrshk"
-    ]
-  },
-  "3716": {
-    "githubId": "amsterget",
-    "name": "Ilya Hancharyk",
-    "students": [
-      "istiniel",
-      "dkon70"
-    ]
-  },
-  "3717": {
-    "githubId": "kagegrifon",
-    "name": "Grigorii Veinin",
-    "students": [
-      "ifloky",
-      "pavel-kuvshinov"
-    ]
-  },
-  "3718": {
-    "githubId": "dazik",
-    "name": "Saidazizkhon Akbarov",
-    "students": [
-      "baranovdv",
-      "kari-adilova",
-      "rushena"
-    ]
-  },
-  "3719": {
-    "githubId": "yuri-9",
-    "name": "Yura Vashkevich",
-    "students": [
-      "gl-el",
-      "valeriiabokher",
-      "swettlana"
-    ]
-  },
-  "3720": {
-    "githubId": "valr0lipsk",
-    "name": "Valeryia  Lipskaya",
-    "students": [
-      "alyona8891",
-      "antasth",
-      "sviatl"
-    ]
-  },
-  "3721": {
-    "githubId": "pyropetrick",
-    "name": "Pavel Chernenko",
-    "students": [
-      "rlexus90",
-      "toronto-tokyo",
-      "solum-the-creator"
-    ]
-  },
-  "3722": {
-    "githubId": "dzmitryikunets",
-    "name": "Dzmitryi Kunets",
-    "students": [
-      "valeriy95",
-      "oleksandr-orzul"
-    ]
-  },
-  "3725": {
-    "githubId": "andrej-a",
-    "name": "Andrej Amelyanovich",
-    "students": [
-      "halinad",
-      "elina-nep"
-    ]
-  },
-  "3726": {
-    "githubId": "shamshodisaev",
-    "name": "Shamshod Isayev",
-    "students": [
-      "nidala1992",
-      "maxfatal88",
-      "twitty97"
-    ]
-  },
-  "3727": {
-    "githubId": "oreskag",
-    "name": "Stepan Volkov",
-    "students": [
-      "akrutsko",
-      "makcim80",
-      "luchiweb",
-      "yuliya241",
-      "ignisvulpe"
-    ]
-  },
-  "3728": {
-    "githubId": "satlykov",
-    "name": "Rustam Satlykov",
-    "students": [
-      "azimkhan93"
-    ]
-  },
-  "3729": {
-    "githubId": "anast-ananko",
-    "name": "Nastassia Ananka",
-    "students": [
-      "ygrcore",
-      "al424",
-      "mekanes",
-      "sergpet93"
-    ]
-  },
-  "3730": {
-    "githubId": "omirbeck",
-    "name": "Omirbek Tulepov",
-    "students": [
-      "maxvy50rs"
-    ]
-  },
-  "3731": {
-    "githubId": "sairo97",
-    "name": "Ruslan Otonbaev",
-    "students": [
-      "xu69ux"
-    ]
-  },
-  "3732": {
-    "githubId": "santerna",
-    "name": "Hanna Dziahonskaya",
-    "students": [
-      "rebel228",
-      "likekugi",
-      "evgueniazet",
-      "ruslanbek92",
-      "nargiza14"
-    ]
-  },
-  "3733": {
-    "githubId": "katyachok",
-    "name": "Katsiaryna Paulovich",
-    "students": [
-      "bazhenovyn",
-      "antonsokolovsky"
-    ]
-  },
-  "3734": {
-    "githubId": "temir-cs",
-    "name": "Temirlan Akhanov",
-    "students": [
-      "deepydee",
-      "sidoryakasergey"
-    ]
-  },
-  "3735": {
-    "githubId": "polivodichka",
-    "name": "Anastasia Polivoda",
-    "students": [
-      "asmat1k",
-      "tetlisna"
-    ]
-  },
-  "3736": {
-    "githubId": "bskom",
-    "name": "Bohdan Shelest",
-    "students": [
-      "michaelsmorgon",
-      "iserhiienko",
-      "dumik121",
-      "andrewar85",
-      "alex5667"
-    ]
-  },
-  "3737": {
-    "githubId": "andreiymarkusheuski",
-    "name": "Andrei Markusheuski",
-    "students": [
-      "okitel",
-      "leszeksokolov",
-      "lobovskiy",
-      "xeniyamv"
-    ]
-  },
-  "3738": {
-    "githubId": "aaparin",
-    "name": "Anton Aparin",
-    "students": [
-      "wystov",
-      "annafridmann",
-      "val331"
-    ]
-  },
-  "3739": {
-    "githubId": "kadamir24",
-    "name": "Amir Kaniyev",
-    "students": [
-      "lev1ossa",
-      "thegreatreddragon666",
-      "majustman"
-    ]
-  },
-  "3740": {
-    "githubId": "akimserik",
-    "name": "Serik Akimgereyev",
-    "students": [
-      "galiia-gr",
-      "vlad-shkv",
-      "gregoryrubies",
-      "anastassiya-rybak"
-    ]
-  },
-  "3741": {
-    "githubId": "hallovarvara",
-    "name": "Varvara Deviaterikova",
-    "students": [
-      "yulyakuzich",
-      "anastakozz",
-      "slavr7"
-    ]
-  },
-  "3742": {
-    "githubId": "aliaksandr-bychyk",
-    "name": "Aliaksandr Bychyk",
-    "students": [
-      "akatimer",
-      "zhiznevski",
-      "maxfralou"
-    ]
-  },
-  "3743": {
-    "githubId": "slavafive",
-    "name": "Vyacheslav Efimov",
-    "students": [
-      "leanidrymkevich",
-      "alexkravchenko1605"
-    ]
-  },
-  "3744": {
-    "githubId": "foxygirl",
-    "name": "Elena Pavlova",
-    "students": [
-      "mariaselivanova",
-      "codestudent24",
-      "svygzhryr",
-      "inari13066",
-      "freightdh"
-    ]
-  },
-  "3745": {
-    "githubId": "spadarynjaalina",
-    "name": "Alina Husarava",
-    "students": [
-      "jjjulietta",
-      "anastan588",
-      "fedaliaks",
-      "zhurova2022"
-    ]
-  },
-  "3746": {
-    "githubId": "alex-edward-klim",
-    "name": "Alexey Klimovskoy",
-    "students": [
-      "nikitatopodin",
-      "goodvalts",
-      "shaihali",
-      "pepsivlad"
-    ]
-  },
-  "3747": {
-    "githubId": "dredisn",
-    "name": "Dzianis Dziamenchyk",
-    "students": [
-      "howl404",
-      "academeg1",
-      "capapa"
-    ]
-  },
-  "3748": {
-    "githubId": "jmsbrn",
-    "name": "Aleksandr Zakhavai",
-    "students": [
-      "irina0313",
-      "kolyavol"
-    ]
-  },
-  "3749": {
-    "githubId": "guschins",
-    "name": "Sergei Gushchin",
-    "students": [
-      "smetan-dot",
-      "mashabogdanova",
-      "ilyakhokhanov",
-      "aarrttuurr",
-      "dongl1n"
-    ]
-  },
-  "3750": {
-    "githubId": "vitalikkarpuk",
-    "name": "Vitali Karpuk",
-    "students": [
-      "crecker05ru",
-      "sweet-ka"
-    ]
-  },
-  "3752": {
-    "githubId": "bloodsuckers-spb",
-    "name": "Bakov Vitalii",
-    "students": [
-      "dedushkaalex"
-    ]
-  },
-  "3753": {
-    "githubId": "shagon1k",
-    "name": "Aliaksei Hurynovich",
-    "students": [
-      "alwaysadevzero",
-      "adziakon"
-    ]
-  },
-  "3754": {
-    "githubId": "rasskris",
-    "name": "Kristina Rassoshenko",
-    "students": [
-      "helgazhizhka",
-      "marigza",
-      "bizhluzdy"
-    ]
-  },
-  "3755": {
-    "githubId": "insanusmokrassar",
-    "name": "Aleksei Ovsiannikov",
-    "students": [
-      "lqosl",
-      "hellcat0147",
-      "lizavetanik"
-    ]
-  },
-  "3756": {
-    "githubId": "saintnekit",
-    "name": "Nikita Stepanovs",
-    "students": [
-      "alxndrsmk",
-      "yevheniiorhanistyi",
-      "kikinovk",
-      "ilyaduginov1997"
-    ]
-  },
-  "3757": {
-    "githubId": "vanya1000",
-    "name": "Ivan Zaharenko",
-    "students": [
-      "yasya23",
-      "kontinentkm",
-      "jakshazbi"
-    ]
-  },
-  "3758": {
-    "githubId": "dmitryduy",
-    "name": "dmitry deryugin",
-    "students": [
-      "flamefront-end",
-      "evalore"
-    ]
-  },
-  "3759": {
-    "githubId": "egorprus",
-    "name": "Egor Prus",
-    "students": [
-      "irvelds",
-      "yuliamasliak",
-      "andrplko",
-      "yanabel1996",
-      "craftsw0man",
-      "lyutails"
-    ]
-  },
-  "3760": {
-    "githubId": "natakers",
-    "name": "Nataliia Kersnovskaia",
-    "students": [
-      "elenaanisimova",
-      "nastiacandor",
-      "getgitgood"
-    ]
-  },
-  "3761": {
-    "githubId": "dino19981",
-    "name": "Artem Stepanov",
-    "students": [
-      "radzivonn",
-      "gtailde",
-      "ivanavlasevich"
-    ]
-  },
-  "3762": {
-    "githubId": "eugenius-l2",
-    "name": "Yauheni Babrounik",
-    "students": [
-      "kovzanok",
-      "thenickola",
-      "alexeiisprogrammer"
-    ]
-  },
-  "3763": {
-    "githubId": "shekomaxim",
-    "name": "MAKSIM SHEKA",
-    "students": [
-      "eugenekhovaiev",
-      "alena636",
-      "kuzikevichdavid",
-      "junproger",
-      "spacehummer"
-    ]
-  },
-  "3764": {
-    "githubId": "anastasiya220394",
-    "name": "Anastasiya Nitsiyeuskaya",
-    "students": [
-      "romankadevich",
-      "f4hr"
-    ]
-  },
-  "3765": {
-    "githubId": "ovasilena",
-    "name": "Olga Podlubnaja",
-    "students": [
-      "aleksgf",
-      "olgamarkevich",
-      "0dinec"
-    ]
-  },
-  "3766": {
-    "githubId": "newalexey",
-    "name": "Alexey Krupenia",
-    "students": [
-      "vadimshidlov",
-      "vulgun",
-      "juliabel5"
-    ]
-  },
-  "3767": {
-    "githubId": "3igrik",
-    "name": "Erlan Toktosunov",
-    "students": [
-      "fileofish",
-      "adzhigitovruslan",
-      "taorminak"
-    ]
-  },
-  "3768": {
-    "githubId": "uladzislaukutarkin",
-    "name": "Uladzislau Kutarkin",
-    "students": [
-      "filmaxim",
-      "pavelvl21",
-      "glitch-surfer",
-      "aliaksandrbutsin"
-    ]
-  },
-  "3769": {
-    "githubId": "lexx129",
-    "name": "Aleksei Gavrilov",
-    "students": [
-      "anna-mamedova",
-      "anderskambenders",
-      "terrign"
-    ]
-  },
-  "3770": {
-    "githubId": "dnsyoudnk",
-    "name": "Dzianis Yudenka",
-    "students": [
-      "irinapeshko",
-      "maria-kashpur",
-      "idiamondcat",
-      "vladimir8sabaev"
-    ]
-  },
-  "3771": {
-    "githubId": "elenaalena",
-    "name": "Alena Novik",
-    "students": [
-      "mariyavoytovich",
-      "codemashine",
-      "dbox7"
-    ]
-  },
-  "3772": {
-    "githubId": "van-a",
-    "name": "Andrei Vaniushyn",
-    "students": [
-      "ir4d",
-      "maltsau",
-      "nataliavozhdaeva"
-    ]
-  },
-  "3774": {
-    "githubId": "aleksey-drozdov",
-    "name": "Aleksey Drozdov",
-    "students": [
-      "elen-jagger",
-      "roiers",
-      "papryca"
-    ]
-  },
-  "3776": {
-    "githubId": "jjshko10",
-    "name": "Stanislau Lukyanenka",
-    "students": [
-      "greys73",
-      "firebrand-rs",
-      "sergeyvolkov03",
-      "oljabarovskaya"
-    ]
-  },
-  "3777": {
-    "githubId": "viktoriabakun",
-    "name": "Viktoryia Bakun",
-    "students": [
-      "ritter1111",
-      "khaleeva",
-      "tatianakucheba",
-      "milakolasava"
-    ]
-  },
-  "3778": {
-    "githubId": "mdz1985",
-    "name": "DZMITRY MELAYOK",
-    "students": [
-      "pozdnyakoks",
-      "alexpirko",
-      "kirillvm"
-    ]
-  },
-  "3781": {
-    "githubId": "grigoriynestsiarovich",
-    "name": "Ryhor Nestsiarovich",
-    "students": [
-      "divanov1ch",
-      "beskibeski",
-      "pavel-kv"
-    ]
-  },
-  "3782": {
-    "githubId": "elem15",
-    "name": "Mikhail Dvorkin",
-    "students": [
-      "vvsar",
-      "funduk1223",
-      "pipipi666"
-    ]
-  },
-  "3783": {
-    "githubId": "803142",
-    "name": "Maksim Stankevich",
-    "students": [
-      "mariyademy",
-      "yaroslavagd",
-      "jkhvatova"
-    ]
-  },
-  "3784": {
-    "githubId": "vight86",
-    "name": "Uladzimir Pekun",
-    "students": [
-      "ffriday",
-      "viktarbrutsis"
-    ]
-  },
-  "3785": {
-    "githubId": "vadimshut",
-    "name": "Vadim Shut",
-    "students": [
-      "vladimirtrainee",
-      "rybalkoyakov"
-    ]
-  },
-  "3786": {
-    "githubId": "garnich",
-    "name": "Andrei Ihnatsiuk",
-    "students": [
-      "duxcoder",
-      "a-reznikov",
-      "tatsianasauko",
-      "western8"
-    ]
-  },
-  "3788": {
-    "githubId": "alexanderson0708",
-    "name": "Son Aleksandr",
-    "students": [
-      "chessmasterr",
-      "bybybylochka"
-    ]
-  },
-  "3789": {
-    "githubId": "sergbily",
-    "name": "Siarhei Bialiauski",
-    "students": [
-      "anastasiiadedela",
-      "gladkaay"
-    ]
-  },
-  "3790": {
-    "githubId": "vladpoltorin",
-    "name": "Vlad Poltorin",
-    "students": [
-      "massaracsh7",
-      "iisakjanova",
-      "freennnn"
-    ]
-  },
-  "3791": {
-    "githubId": "vovoka-path",
-    "name": "Vladimir Polansky",
-    "students": [
-      "eugenebalts",
-      "elsuppo"
-    ]
-  },
-  "3792": {
-    "githubId": "orlov332",
-    "name": "Valeriy Orlov",
-    "students": [
-      "ramzes-84",
-      "lu7623",
-      "mksenni"
-    ]
-  },
-  "3794": {
-    "githubId": "aleksandrgorodetskii",
-    "name": "Aleksandr Gorodetskii",
-    "students": [
-      "hapikus",
-      "swallowones",
-      "lukshaolya",
-      "intetrix"
-    ]
-  },
-  "3795": {
-    "githubId": "kirilldemyanenko",
-    "name": "Kirill Demyanenko",
-    "students": [
-      "hier09lyph",
-      "andreivauchok2211"
-    ]
-  },
-  "3796": {
-    "githubId": "kirylzuyeu",
-    "name": "Kiryl Zuyeu",
-    "students": [
-      "udjenkl"
-    ]
-  },
-  "3797": {
-    "githubId": "moskkir",
-    "name": "Kiryl Maskalevich",
-    "students": [
-      "tvaexperts",
-      "eugenev8"
-    ]
-  },
-  "3798": {
+  "3972": {
     "githubId": "gentoosiast",
     "name": "Sergey Koksharov",
     "students": [
-      "lidasharova",
-      "aniretakey",
-      "irina-grebennikova",
-      "kategoncharik"
+      "skayer81",
+      "ramankandratchyk",
+      "mideli37",
+      "berriestime",
+      "nadyagus",
+      "naya252",
+      "assavr",
+      "kategoncharik",
+      "madonnaduoethil"
     ]
   },
-  "3800": {
-    "githubId": "lehaazarenko",
-    "name": "Aliaksei Azaranka",
+  "3973": {
+    "githubId": "cstrp",
+    "name": "Valery Nosareu",
     "students": [
-      "vanyha010",
-      "alekseikachkin",
-      "anna-grigencha"
+      "sanwed",
+      "zelenskiy"
     ]
   },
-  "3801": {
-    "githubId": "ismet1999",
-    "name": "Ismet Kadirov",
+  "3974": {
+    "githubId": "alextes90",
+    "name": "Aleksandr Teslin",
     "students": [
-      "kuzmich84",
-      "martip54"
+      "alekseng",
+      "coffeekosatka"
     ]
   },
-  "3802": {
-    "githubId": "oksanafedotova",
-    "name": "Oksana Fedotova",
+  "3977": {
+    "githubId": "rockstar666by",
+    "name": "Artsiom Sauchuk",
     "students": [
-      "donalpatino",
-      "drius123",
-      "krautsou-andrei"
+      "terebinovsergey",
+      "s-serg-m",
+      "serega3526",
+      "holikava"
     ]
   },
-  "3803": {
-    "githubId": "jatak307",
-    "name": "Katsiaryna Afanasenka",
+  "3981": {
+    "githubId": "alexandrleshenko1991",
+    "name": "Aliaksandr Leshchanka",
     "students": [
-      "quaqvagit",
-      "laleks6",
-      "4-13"
+      "letanatol",
+      "dewlar",
+      "ins44ne",
+      "annsinkevich47"
     ]
   },
-  "3804": {
-    "githubId": "andreyamelchenia",
-    "name": "Andrey Amelchenia",
+  "3982": {
+    "githubId": "valr0lipsk",
+    "name": "Valeryia  Lipskaya",
     "students": [
-      "mgg43err",
-      "ef-siarhei"
+      "mitsuhitomeow"
     ]
   },
-  "3805": {
-    "githubId": "nat6",
-    "name": "Natalia Antonova",
+  "3983": {
+    "githubId": "m9t3zhn1k",
+    "name": "Pavel Korshunau",
     "students": [
-      "yuriy113",
-      "alexdrags"
+      "pashawol",
+      "trybukhouski"
     ]
   },
-  "3806": {
-    "githubId": "alexandersus",
-    "name": "Aleksandr Suslov",
+  "3984": {
+    "githubId": "asindeton",
+    "name": "Dzmitry Lehankou",
     "students": [
-      "yusivacova",
-      "annfromearth"
+      "silcorp",
+      "kirrbrest"
     ]
   },
-  "3808": {
-    "githubId": "zoobbi",
-    "name": "Aleh Navoyeu",
+  "3987": {
+    "githubId": "igor2000xp",
+    "name": "Igor Aniskevich",
     "students": [
-      "dimonio04",
-      "serjkitel",
-      "vladzimirbely",
-      "syargeival"
+      "tatianabz"
     ]
   },
-  "3809": {
-    "githubId": "butterbrot777",
-    "name": "Pavel Karenda",
+  "3988": {
+    "githubId": "myspecialspace",
+    "name": "Ekaterina Kuznetsova",
     "students": [
-      "siarhei1927",
-      "astap4"
+      "maxalesh"
     ]
   },
-  "3810": {
-    "githubId": "at-sky",
-    "name": "Klavdiy Tracevskiy",
+  "3989": {
+    "githubId": "malagor",
+    "name": "Aleksandr Pisarik",
     "students": [
-      "laevus92",
-      "denwouk"
+      "gryzun33",
+      "slavanekrish"
     ]
   },
-  "3812": {
-    "githubId": "limhill",
-    "name": "Alibek Zhulmurzin",
+  "3990": {
+    "githubId": "stsiapansukach",
+    "name": "Stsiapan Sukach",
     "students": [
-      "roshik14",
-      "immuneqq",
-      "eol1881",
-      "duumbling",
-      "dmitriyrim",
-      "skarabeydm"
+      "stf0x9",
+      "fymg",
+      "b-aliaksandr"
     ]
   },
-  "3813": {
-    "githubId": "etroynov",
-    "name": "Evgenii Troinov",
+  "3991": {
+    "githubId": "mindr17",
+    "name": "Andrey Kim",
     "students": [
-      "vesnanervah",
-      "toma-fedyanova",
-      "zubaryk",
-      "leniliya",
-      "yal0",
-      "tatiana-kasiyanik",
-      "matheria",
-      "nadyayusova"
+      "mrhoft",
+      "remantof",
+      "1alisa1",
+      "djpont",
+      "nuromirzak"
     ]
   },
-  "3814": {
-    "githubId": "n8m",
-    "name": "Fyodor Khruschov",
+  "3993": {
+    "githubId": "kubarenation",
+    "name": "Nikita Kubarko",
     "students": [
-      "sobyt483",
-      "zakalupali89"
+      "khvorosttt",
+      "froze36"
     ]
   },
-  "3815": {
-    "githubId": "unbiz",
-    "name": "Vladimir Bessonov",
+  "3994": {
+    "githubId": "istairina",
+    "name": "Irina Migunova",
     "students": [
-      "dniils",
-      "ginger-owl"
+      "andriihordov",
+      "hapurzhonau"
     ]
   },
-  "3816": {
-    "githubId": "tropler",
-    "name": "Kanstantsin Sharakouski",
+  "3995": {
+    "githubId": "arcanar7",
+    "name": "Yaroslav Denisiuk",
     "students": [
-      "sadjoebright",
-      "gemer31",
-      "kristalik8",
-      "juli-ko"
+      "imyakhoroshee",
+      "nadyavalin",
+      "psh010"
     ]
   },
-  "3817": {
-    "githubId": "thrvrce",
-    "name": "Viktar Audzeyeu",
+  "3996": {
+    "githubId": "spaceragga",
+    "name": "Ivan Mikhalchanka",
     "students": [
-      "ziberpax",
-      "volasau",
-      "andrew-radchikov"
+      "iggypope",
+      "ynadt",
+      "ranika23",
+      "mistert1a",
+      "ulikemyway1",
+      "ivankapitula",
+      "nesmeian",
+      "tatsianask108",
+      "alv0425",
+      "chickenmcnuggetss"
     ]
   },
-  "3819": {
-    "githubId": "antontelichenko",
-    "name": "anton telichenko",
+  "3998": {
+    "githubId": "jerubrin",
+    "name": "Alexey Kuptsov",
     "students": [
-      "gsidnick",
-      "tolive",
-      "nduchin"
+      "ki8vi",
+      "izeevens"
     ]
   },
-  "3821": {
-    "githubId": "manofsky",
-    "name": "Yury Ramanouski",
+  "3999": {
+    "githubId": "youjob13",
+    "name": "Danila Rodionow",
     "students": [
-      "irinaenotova"
+      "arthur-iorbalidi",
+      "larrydavidd",
+      "madsok"
     ]
   },
-  "3822": {
-    "githubId": "dmytropetrenko",
-    "name": "Dmytro  Petrenko",
+  "4001": {
+    "githubId": "klimentsii",
+    "name": "Klimentsii Parkhomchuk",
     "students": [
-      "gekko-ops",
-      "zero8273"
+      "k98940",
+      "kostyakuk"
     ]
   },
-  "3823": {
-    "githubId": "ggwebproject",
-    "name": "Vitali Hantarenka",
+  "4002": {
+    "githubId": "wozzzie",
+    "name": "Maryia Harnashevich",
     "students": [
-      "antonfartovii"
+      "ek-ole",
+      "metamorfoza42"
     ]
   },
-  "3824": {
-    "githubId": "nataliagulko",
-    "name": "Natalia Gulko",
+  "4003": {
+    "githubId": "dzmitryikunets",
+    "name": "Dzmitryi Kunets",
     "students": [
-      "johngaalt",
-      "aleksem07",
-      "nikitastarmoussov"
+      "alexihavr",
+      "alexandermisyura"
     ]
   },
-  "3826": {
-    "githubId": "dasha1801",
-    "name": "Dasha Belskaya",
+  "4006": {
+    "githubId": "bardachov",
+    "name": "Artem Bardachov",
     "students": [
-      "dovgulucky",
-      "juliakocur",
-      "belski-anton"
+      "anenkosofi",
+      "serhii-ivasiuk"
     ]
   },
-  "3827": {
-    "githubId": "runorfight",
-    "name": "Aliaksandr Mikhniuk",
+  "4007": {
+    "githubId": "devarslan",
+    "name": "Arslan Gareev",
     "students": [
-      "pinkpony1106",
-      "bogdanovich231",
-      "lenayork"
+      "bodnaralex",
+      "alexeitorchinsky"
     ]
   },
-  "3829": {
-    "githubId": "anton-shvetc",
-    "name": "Anton Shvetc",
+  "4008": {
+    "githubId": "daniel-ki",
+    "name": "Daniil Karshou",
     "students": [
-      "mikheytsevna",
-      "spellk",
-      "checas1"
+      "mineclinee"
     ]
   },
-  "3830": {
-    "githubId": "sthm23",
-    "name": "Sanjar Tukhtamishev",
+  "4009": {
+    "githubId": "mikitashamkuts",
+    "name": "Mikita Shamkuts",
     "students": [
-      "tnikolay",
-      "ge1o1ge"
+      "egorerkovich",
+      "kaminosss",
+      "naumalex"
     ]
   },
-  "3831": {
-    "githubId": "speedym282",
-    "name": "Akhadbek Rizakulov",
+  "4010": {
+    "githubId": "h1stil",
+    "name": "Ilmir Kavyev",
     "students": [
-      "prostonau",
-      "rigelion154",
-      "svetlanashcherba"
+      "annaazh",
+      "jasper7466",
+      "tatianalevina"
     ]
   },
-  "3832": {
-    "githubId": "dapodev",
-    "name": "Danila Apalonik",
+  "4012": {
+    "githubId": "alxndrsmk",
+    "name": "Aliaksandr Samak",
     "students": [
-      "dab10"
+      "klio7"
     ]
   },
-  "3833": {
-    "githubId": "alenabde",
-    "name": "Alena Ananich",
+  "4014": {
+    "githubId": "whityha",
+    "name": "Pavel Khapaliuk",
     "students": [
-      "mikhaelhan",
-      "antonvit1",
-      "rukalarukala"
+      "zarembochka",
+      "lilo002",
+      "crazytapok"
     ]
   },
-  "3834": {
-    "githubId": "eslvkirill",
-    "name": "Kirill Eselev",
+  "4015": {
+    "githubId": "803142",
+    "name": "Maksim Stankevich",
     "students": [
-      "spacepocket1985",
-      "nowaylifer",
-      "nickoff"
+      "victoriagorobets"
     ]
   },
-  "3839": {
+  "4016": {
+    "githubId": "yvolha",
+    "name": "Volha Yakauleva",
+    "students": [
+      "cordozar",
+      "konmedoed",
+      "vadzimavich",
+      "unnamed-193",
+      "otabekmirzakhmedov",
+      "ifedserge"
+    ]
+  },
+  "4017": {
+    "githubId": "rashidfn",
+    "name": "Rashid Zhumadilov",
+    "students": [
+      "andmnstr"
+    ]
+  },
+  "4019": {
+    "githubId": "4ebula",
+    "name": "Gleb Pissarik",
+    "students": [
+      "mogitrash",
+      "constantineigorevich"
+    ]
+  },
+  "4020": {
+    "githubId": "rahunak",
+    "name": "Eugenii Zaiko",
+    "students": [
+      "regemler",
+      "vwital"
+    ]
+  },
+  "4021": {
+    "githubId": "dzmitrynz",
+    "name": "Mitry Nz",
+    "students": [
+      "koshman-dmitri",
+      "alexhiriavenko",
+      "deuxego"
+    ]
+  },
+  "4023": {
+    "githubId": "evg-zlg",
+    "name": "Evgeny Zalogin",
+    "students": [
+      "kagerka",
+      "ilyabaranowski",
+      "myr-irina"
+    ]
+  },
+  "4027": {
+    "githubId": "anast-ananko",
+    "name": "Nastassia Ananka",
+    "students": [
+      "denbern",
+      "xats89",
+      "olgabogush"
+    ]
+  },
+  "4029": {
+    "githubId": "mitjasha",
+    "name": "Dzmitry Shakhrai",
+    "students": [
+      "jeckjonnyq",
+      "oleg-melnikow",
+      "nelany",
+      "patciahevich",
+      "andreimakhnach2209"
+    ]
+  },
+  "4033": {
+    "githubId": "neemkashu",
+    "name": "Ekaterina Radchenko",
+    "students": [
+      "samael-god",
+      "gkonopelko"
+    ]
+  },
+  "4034": {
+    "githubId": "eroldkoil",
+    "name": "Mikalai Yakubau",
+    "students": [
+      "koeebeth",
+      "maruyyak"
+    ]
+  },
+  "4035": {
+    "githubId": "mikaleinik",
+    "name": "Mikhail Aleinik",
+    "students": [
+      "kleostro",
+      "yulikk",
+      "yuliya9449",
+      "stardustmeg",
+      "vitalimay"
+    ]
+  },
+  "4036": {
+    "githubId": "thorsangervanet",
+    "name": "Vadzim Antonau",
+    "students": [
+      "marblehands",
+      "nestserka",
+      "craftsw0man"
+    ]
+  },
+  "4037": {
+    "githubId": "926227",
+    "name": "Konstantin Zhiliaev",
+    "students": [
+      "playreal",
+      "izy-code"
+    ]
+  },
+  "4038": {
+    "githubId": "mashalarchenko",
+    "name": "Maryia Larchanka",
+    "students": [
+      "andreytishchenko"
+    ]
+  },
+  "4039": {
+    "githubId": "d-prokhorenko",
+    "name": "Dzianis Prakharenka",
+    "students": [
+      "ferdente",
+      "lisowez",
+      "onqqr"
+    ]
+  },
+  "4041": {
+    "githubId": "deepenguin",
+    "name": "Kristina Chekhova",
+    "students": [
+      "jonyforest93",
+      "lowraince"
+    ]
+  },
+  "4042": {
+    "githubId": "onskulit",
+    "name": "Dmitriy Latyshev",
+    "students": [
+      "d4n1el13and37",
+      "annkainova",
+      "sviatj",
+      "idmit"
+    ]
+  },
+  "4043": {
+    "githubId": "egorprus",
+    "name": "Egor Prus",
+    "students": [
+      "veta306"
+    ]
+  },
+  "4044": {
+    "githubId": "existanz",
+    "name": "Magomed Oziev",
+    "students": [
+      "mvkozak-fe",
+      "ivankirik"
+    ]
+  },
+  "4045": {
     "githubId": "andrewshamrey",
     "name": "Andrei Shamrei",
     "students": [
-      "alima987",
-      "andrei-kochetov"
+      "svetailina",
+      "katiegrigoreva"
     ]
   },
-  "3840": {
-    "githubId": "bvfromru",
-    "name": "Vitaliy Boudkin",
+  "4046": {
+    "githubId": "andrewkarev",
+    "name": "Andrei Karau",
     "students": [
-      "dstrizhakov",
-      "webj0ker",
-      "larrydavidd",
-      "mardon07"
+      "polyakov-artem",
+      "marakoris2022",
+      "oxygeniumo2"
     ]
   },
-  "3841": {
-    "githubId": "marluk1",
-    "name": "Marina lukashkina",
+  "4047": {
+    "githubId": "teleuzi",
+    "name": "Yauheni Tsurankou",
     "students": [
-      "mat-kon",
-      "sardn"
+      "yuliyavoronovich",
+      "visheyt",
+      "rykovamariia",
+      "ripetchor"
+    ]
+  },
+  "4048": {
+    "githubId": "olegkrasilev",
+    "name": "Aleh Krasiliou",
+    "students": [
+      "antonogonovskiy",
+      "adastra97"
+    ]
+  },
+  "4049": {
+    "githubId": "loginovskymax",
+    "name": "Maxim Loginovsky",
+    "students": [
+      "kikijiki85",
+      "helenaish"
+    ]
+  },
+  "4050": {
+    "githubId": "vladislavkovaliov",
+    "name": "Vladislav K",
+    "students": [
+      "makarovaiuliia",
+      "lelderbe"
+    ]
+  },
+  "4051": {
+    "githubId": "sergioajs",
+    "name": "Sergei Aslanov",
+    "students": [
+      "alexey888888",
+      "jofetta"
+    ]
+  },
+  "4053": {
+    "githubId": "dzmitry92",
+    "name": "Dzmitry Serafimovich",
+    "students": [
+      "iambigbobby",
+      "vanyha010"
+    ]
+  },
+  "4054": {
+    "githubId": "oddyhater",
+    "name": "Roman Grishin",
+    "students": [
+      "anthony-th"
+    ]
+  },
+  "4055": {
+    "githubId": "margaryta-maletz",
+    "name": "Marharyta Malets",
+    "students": [
+      "anturchin",
+      "monacolga",
+      "dasha2101",
+      "farsenyev"
+    ]
+  },
+  "4056": {
+    "githubId": "ekaterina1994",
+    "name": "Katsiaryna Veratsennikava",
+    "students": [
+      "syrtcevadaria",
+      "tatyanadolgova",
+      "comtvset",
+      "gbrjo",
+      "ezacd",
+      "rs0048",
+      "margo06"
+    ]
+  },
+  "4057": {
+    "githubId": "xhhjlt",
+    "name": "Aleksandr Shchepkivskii",
+    "students": [
+      "vadim-mg"
+    ]
+  },
+  "4060": {
+    "githubId": "dmitrytereshchenko",
+    "name": "Dzmitry Tsiareshchanka",
+    "students": [
+      "the-dmitry",
+      "valeriya2511",
+      "varvaragaponova"
+    ]
+  },
+  "4061": {
+    "githubId": "tritonjs826",
+    "name": "VIKTAR VERATSENNIKAU",
+    "students": [
+      "dyoncha",
+      "belosnezhie",
+      "vadim-ma",
+      "forlocks",
+      "kirill-fokin",
+      "naijelo",
+      "maria-akulova"
+    ]
+  },
+  "4062": {
+    "githubId": "rybakouvlad",
+    "name": "Uladzislau Rybakou",
+    "students": [
+      "vicadin",
+      "hdziakava",
+      "taniadou"
+    ]
+  },
+  "4063": {
+    "githubId": "baglan01",
+    "name": "Baglan Muratbek",
+    "students": [
+      "k0lesan",
+      "z-e-a",
+      "zhansaulet"
+    ]
+  },
+  "4064": {
+    "githubId": "yuliyaminsk",
+    "name": "Yuliya Niaverava",
+    "students": [
+      "ympakaloky",
+      "andriishopiak"
+    ]
+  },
+  "4066": {
+    "githubId": "molodova",
+    "name": "Aleksandr Molodov",
+    "students": [
+      "redakt0r",
+      "ekaterina-cat"
+    ]
+  },
+  "4067": {
+    "githubId": "primky",
+    "name": "Valentin Kalinin",
+    "students": [
+      "mabusyara",
+      "suficks",
+      "nivarnas",
+      "cabanero22",
+      "natashakle",
+      "katriosa"
+    ]
+  },
+  "4068": {
+    "githubId": "at-sky",
+    "name": "Klavdiy Tracevskiy",
+    "students": [
+      "ivankritsckii",
+      "laranu"
+    ]
+  },
+  "4069": {
+    "githubId": "shamshodisaev",
+    "name": "Shamshod Isayev",
+    "students": [
+      "gromov-roman",
+      "pavelkonstantinovich"
+    ]
+  },
+  "4070": {
+    "githubId": "slikedollar",
+    "name": "Ihor Krasilnikov",
+    "students": [
+      "mega-perforator-hyper-daedalus37"
+    ]
+  },
+  "4071": {
+    "githubId": "jewelhux",
+    "name": "Ilya Danilov",
+    "students": [
+      "vladimirovicp"
+    ]
+  },
+  "4074": {
+    "githubId": "maximomelchuk",
+    "name": "Maksim Amialchuk",
+    "students": [
+      "timoshenkovanadya"
+    ]
+  },
+  "4075": {
+    "githubId": "aleksander-true",
+    "name": "Aleksandr Seriapin",
+    "students": [
+      "evvrod",
+      "tabrisel"
+    ]
+  },
+  "4076": {
+    "githubId": "shnyrkevich",
+    "name": "Yauheni Shnyrkevich",
+    "students": [
+      "40iq",
+      "binkki",
+      "aleksanderpirojok"
+    ]
+  },
+  "4079": {
+    "githubId": "andron13",
+    "name": "Andrej Podlubnyj",
+    "students": [
+      "olgaindykova",
+      "lena-lis"
+    ]
+  },
+  "4080": {
+    "githubId": "hakimbek",
+    "name": "Khakim Bakhramov",
+    "students": [
+      "tacherenko",
+      "evgeniypuca",
+      "maria-kovalenko"
+    ]
+  },
+  "4082": {
+    "githubId": "alexk321",
+    "name": "Aliaksey Kastsevich",
+    "students": [
+      "tayahanchar",
+      "roisler",
+      "iamarrow88"
+    ]
+  },
+  "4083": {
+    "githubId": "shustovsky",
+    "name": "Aliaksandr Shustouski",
+    "students": [
+      "raenlin"
+    ]
+  },
+  "4084": {
+    "githubId": "bogdanovich231",
+    "name": "Tatsiana Kulinkovich",
+    "students": [
+      "asubas",
+      "mr-times",
+      "dzmitryalekseev",
+      "sssothink"
+    ]
+  },
+  "4085": {
+    "githubId": "alexkochnev1987",
+    "name": "Aliaksandr Kochneu",
+    "students": [
+      "frost-704",
+      "maximozaitsev",
+      "voronovanasta"
+    ]
+  },
+  "4086": {
+    "githubId": "madkorney",
+    "name": "sergey kornienko",
+    "students": [
+      "antoniopivaldi",
+      "kravius",
+      "evikary",
+      "visperas1703"
+    ]
+  },
+  "4090": {
+    "githubId": "artemnikolaev",
+    "name": "Artem Nikolaev",
+    "students": [
+      "pdasya"
+    ]
+  },
+  "4091": {
+    "githubId": "eremor",
+    "name": "Artem Smirnov",
+    "students": [
+      "irinafileva",
+      "yorokay"
+    ]
+  },
+  "4093": {
+    "githubId": "jspowwow",
+    "name": "Oleksandr Radvanskyi",
+    "students": [
+      "tetiana-ket",
+      "maksim99745",
+      "elena-lucky"
+    ]
+  },
+  "4095": {
+    "githubId": "bambloov",
+    "name": "Egor Gavrilenko",
+    "students": [
+      "kaklesha"
+    ]
+  },
+  "4096": {
+    "githubId": "renirengi",
+    "name": "Olga Bogdanova",
+    "students": [
+      "aliquickc",
+      "kirillgenin",
+      "zytsev",
+      "ihar-batura"
+    ]
+  },
+  "4098": {
+    "githubId": "abram31",
+    "name": "Artsiom Abramovich",
+    "students": [
+      "miyanka",
+      "maracash41"
+    ]
+  },
+  "4099": {
+    "githubId": "glitch-surfer",
+    "name": "Vladislav Garaev",
+    "students": [
+      "valeriiakuz",
+      "dialecticallaw"
+    ]
+  },
+  "4100": {
+    "githubId": "azazellospb",
+    "name": "Anton Ivanov",
+    "students": [
+      "valentyn14"
+    ]
+  },
+  "4101": {
+    "githubId": "fedorenksei",
+    "name": "Aleksei Fedorenko",
+    "students": [
+      "sashapervykh",
+      "cerbeer",
+      "cheidru",
+      "anzhelika007"
+    ]
+  },
+  "4102": {
+    "githubId": "rimidalu",
+    "name": "Uladzimir Stankevich",
+    "students": [
+      "nuttik",
+      "b1ood"
+    ]
+  },
+  "4103": {
+    "githubId": "spanb4",
+    "name": "Dzmitry Yarmoshkin",
+    "students": [
+      "yuliya-karuk",
+      "vitali86",
+      "greyadmiral"
+    ]
+  },
+  "4104": {
+    "githubId": "baxromxoja16",
+    "name": "Ag'lamxo'jayev Baxromxo'ja",
+    "students": [
+      "khayitbek03",
+      "kenjaeff"
+    ]
+  },
+  "4105": {
+    "githubId": "stanlys",
+    "name": "Sergey Chelnakov",
+    "students": [
+      "dmitriyishchenko",
+      "lipan4836",
+      "frontend200tb"
+    ]
+  },
+  "4106": {
+    "githubId": "foxygirl",
+    "name": "Elena Pavlova",
+    "students": [
+      "amrkov5"
+    ]
+  },
+  "4107": {
+    "githubId": "sladowname",
+    "name": "Pasha Grudinsky",
+    "students": [
+      "julietbrn",
+      "marizinkevich"
+    ]
+  },
+  "4108": {
+    "githubId": "kkolite",
+    "name": "Yahor Litavar",
+    "students": [
+      "tatsianakrav",
+      "kostaxy",
+      "proboynick"
+    ]
+  },
+  "4109": {
+    "githubId": "stanislavkharkiv",
+    "name": "Stanislav Iosifov",
+    "students": [
+      "aggamix",
+      "letmezep",
+      "lenok-kup"
+    ]
+  },
+  "4110": {
+    "githubId": "natanchik",
+    "name": "Natalia Lebedeva",
+    "students": [
+      "ivmoskalev"
+    ]
+  },
+  "4111": {
+    "githubId": "no95typem",
+    "name": "Maksim Kapalin",
+    "students": [
+      "drbliman"
+    ]
+  },
+  "4117": {
+    "githubId": "xocink",
+    "name": "Dzmitry Petukh",
+    "students": [
+      "gbogdanova",
+      "fairuzajs"
+    ]
+  },
+  "4118": {
+    "githubId": "alesiabandarenka",
+    "name": "Alesia Bandarenka",
+    "students": [
+      "sunr1se14",
+      "xfedsix",
+      "madest78"
+    ]
+  },
+  "4119": {
+    "githubId": "gnomepman",
+    "name": "Danyil Derkach",
+    "students": [
+      "filisinia",
+      "svetsitkh",
+      "ab3mn"
+    ]
+  },
+  "4121": {
+    "githubId": "ansee66",
+    "name": "Natalya Solovyeva",
+    "students": [
+      "webjsmaster",
+      "anatoli-paliukhovich",
+      "anastshak"
+    ]
+  },
+  "4127": {
+    "githubId": "msobolevskiy",
+    "name": "Maksim Sabaleuski",
+    "students": [
+      "amelur"
+    ]
+  },
+  "4130": {
+    "githubId": "newalexey",
+    "name": "Alexey Krupenia",
+    "students": [
+      "juliabel5",
+      "kovalkl",
+      "hannakuliaba",
+      "besyashka"
+    ]
+  },
+  "4131": {
+    "githubId": "ie4fb",
+    "name": "Alexander Sarychev",
+    "students": [
+      "akiraqz"
+    ]
+  },
+  "4133": {
+    "githubId": "anastasiabond87",
+    "name": "Anastasia Bondarenko",
+    "students": [
+      "andnikis",
+      "whittun"
+    ]
+  },
+  "4134": {
+    "githubId": "alex-mirankov",
+    "name": "Aliaksandr Mirankou",
+    "students": [
+      "oksanasokal",
+      "kseniia-vakhrusheva"
+    ]
+  },
+  "4135": {
+    "githubId": "zhenyagoroh",
+    "name": "Yauheni Harokh",
+    "students": [
+      "ivandok13",
+      "rudchenkohenadzi"
+    ]
+  },
+  "4139": {
+    "githubId": "klimchak",
+    "name": "Ilia Klimchik",
+    "students": [
+      "klimira",
+      "paul-koo",
+      "ltimur"
+    ]
+  },
+  "4140": {
+    "githubId": "yan-black",
+    "name": "Yan Andrushkin",
+    "students": [
+      "snischuk",
+      "cryingsealpup"
+    ]
+  },
+  "4142": {
+    "githubId": "golubeva-webmaster",
+    "name": "Marina Golubeva",
+    "students": [
+      "yanalysukha",
+      "reel-q",
+      "andyguit",
+      "egorokunevich"
+    ]
+  },
+  "4146": {
+    "githubId": "mowgle88",
+    "name": "Dmytry Ilyin",
+    "students": [
+      "fedaliaks",
+      "sergioivanov008"
+    ]
+  },
+  "4147": {
+    "githubId": "viktory1331",
+    "name": "Viktoryia Fiadosava",
+    "students": [
+      "dzmitrysudalenka"
+    ]
+  },
+  "4148": {
+    "githubId": "ye-russell",
+    "name": "Yerassyl Bekberov",
+    "students": [
+      "sergiozeppo",
+      "ivan-rom"
+    ]
+  },
+  "4150": {
+    "githubId": "surewek",
+    "name": "Vitaly Vegera",
+    "students": [
+      "pavel-kv",
+      "mariyaweb"
+    ]
+  },
+  "4152": {
+    "githubId": "vakulio",
+    "name": "Uladzimir Vakula",
+    "students": [
+      "valeria110",
+      "letohx",
+      "demetrius81"
+    ]
+  },
+  "4154": {
+    "githubId": "hazardsoft",
+    "name": "Henadzi Shutko",
+    "students": [
+      "superded34",
+      "mrrobot911",
+      "olenaweb"
+    ]
+  },
+  "4155": {
+    "githubId": "shekomaxim",
+    "name": "MAKSIM SHEKA",
+    "students": [
+      "svorokhobina"
+    ]
+  },
+  "4156": {
+    "githubId": "skave-a",
+    "name": "Natalya Polyakova",
+    "students": [
+      "aleksa013",
+      "maybe-skiff",
+      "xsoularisx"
+    ]
+  },
+  "4157": {
+    "githubId": "ddd-fx",
+    "name": "Dmitrii Khoroshkin",
+    "students": [
+      "vladdlevshuk",
+      "yulyais",
+      "sashaivanovapro"
+    ]
+  },
+  "4160": {
+    "githubId": "yurypetukhov",
+    "name": "Yury Petukhov",
+    "students": [
+      "cinis-ad-cinis"
+    ]
+  },
+  "4161": {
+    "githubId": "mgg43err",
+    "name": "Andrey Pleskunou",
+    "students": [
+      "darth-vaderx",
+      "igor22-11"
+    ]
+  },
+  "4162": {
+    "githubId": "enya1407",
+    "name": "Eugeniya Ivanova",
+    "students": [
+      "sem0ark"
+    ]
+  },
+  "4166": {
+    "githubId": "den-smith-dev",
+    "name": "Denis Ermolovich",
+    "students": [
+      "jsnata"
+    ]
+  },
+  "4171": {
+    "githubId": "bordo951",
+    "name": "Irina Selivanova",
+    "students": [
+      "dikushch",
+      "valeriastav"
+    ]
+  },
+  "4172": {
+    "githubId": "hardzeichyksiarhei",
+    "name": "Siarhei Hardzeichyk",
+    "students": [
+      "kalinkinfiz"
+    ]
+  },
+  "4173": {
+    "githubId": "jirisimonov",
+    "name": "George Simonov",
+    "students": [
+      "thunderflight"
+    ]
+  },
+  "4174": {
+    "githubId": "jirafek",
+    "name": "Serafim Nikolaev",
+    "students": [
+      "karzhen",
+      "rabbitdrew"
+    ]
+  },
+  "4176": {
+    "githubId": "lidachk",
+    "name": "Lidiya Cherkasova",
+    "students": [
+      "margaritabraun"
+    ]
+  },
+  "4181": {
+    "githubId": "temir-cs",
+    "name": "Temirlan Akhanov",
+    "students": [
+      "madikensky"
+    ]
+  },
+  "4183": {
+    "githubId": "hapikus",
+    "name": "Sergei Chikunov",
+    "students": [
+      "kat2709",
+      "hrybach-oleksiy"
+    ]
+  },
+  "4185": {
+    "githubId": "mamont79",
+    "name": "Pavel Dalhou",
+    "students": [
+      "m-web-jan",
+      "athanasiia",
+      "yasidneva"
+    ]
+  },
+  "4187": {
+    "githubId": "aleksandrgorodetskii",
+    "name": "Aleksandr Gorodetskii",
+    "students": [
+      "ksarise"
+    ]
+  },
+  "4188": {
+    "githubId": "valeria310",
+    "name": "Valeryia Masaltsava",
+    "students": [
+      "lokispirit",
+      "alison-web"
+    ]
+  },
+  "4189": {
+    "githubId": "rdaniliuk",
+    "name": "Roman Daniliuk",
+    "students": [
+      "c00b3r"
+    ]
+  },
+  "4190": {
+    "githubId": "shipu4ka",
+    "name": "Tatyana Shipulina",
+    "students": [
+      "valeryiatselesh"
+    ]
+  },
+  "4200": {
+    "githubId": "akiroi",
+    "name": "Oleksandr Kiroi",
+    "students": [
+      "yana-dyachok"
+    ]
+  },
+  "4205": {
+    "githubId": "filmaxim",
+    "name": "Maksim Fil",
+    "students": [
+      "sokovlad"
+    ]
+  },
+  "4206": {
+    "githubId": "santerna",
+    "name": "Hanna Dziahonskaya",
+    "students": [
+      "kitakiv",
+      "andrey257686"
     ]
   }
 }

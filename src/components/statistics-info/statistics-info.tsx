@@ -42,7 +42,7 @@ const StatisticsInfo = () => {
     <>
       <div className={styles.titleContainter}>
         <Title className={styles.title} level={2}>
-          Statistics on the JS FE 2023 Q1 course
+          Statistics on the JS FE 2023 Q4 course
         </Title>
         <PopoverButton content={<PopoverContentStatisticsMain />} />
       </div>

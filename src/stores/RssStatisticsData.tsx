@@ -56,7 +56,7 @@ class Store {
   };
 
   studentsConstJsonLoadData = async () => {
-    const studentsData = await fetch("/rss-statistics/data/studentConst.json").then(
+    const studentsData = await fetch("https://hapikus.github.io/rss-statistics/data/studentConst.json").then(
       (response) => response.json()
     );
     this.studentsTotal = Number(studentsData["studentsTotal"]);
@@ -68,35 +68,35 @@ class Store {
 
   studentPlaceHistoryLoadData = async () => {
     const studentPlaceHistoryData = await fetch(
-      "/rss-statistics/data/studentPlaceHistory.json"
+      "https://hapikus.github.io/rss-statistics/data/studentPlaceHistory.json"
     ).then((response) => response.json());
   this.taskList = studentPlaceHistoryData.taskList;
   this.studentsPlaceHistory = studentPlaceHistoryData.studentsPlaceHistory
   }
 
   tasksTagLoadData = async () => {
-    const taskTagData = await fetch("/rss-statistics/data/tasksTag.json").then((response) =>
+    const taskTagData = await fetch("https://hapikus.github.io/rss-statistics/data/tasksTag.json").then((response) =>
       response.json()
     );
     this.taskTag = taskTagData;
   };
 
   tasksJsonLoadData = async () => {
-    const tasksData = await fetch("/rss-statistics/data/tasks.json").then((response) =>
+    const tasksData = await fetch("https://hapikus.github.io/rss-statistics/data/tasks.json").then((response) =>
       response.json()
     );
     this.taskJson = tasksData;
   };
 
   tasksResultsJsonLoadData = async () => {
-    const tasksResultsData = await fetch("/rss-statistics/data/tasksResults.json").then((response) =>
+    const tasksResultsData = await fetch("https://hapikus.github.io/rss-statistics/data/tasksResults.json").then((response) =>
       response.json()
     );
     this.tasksResultsJson = tasksResultsData;
   };
 
   mentorsJsonLoadData = async () => {
-    const jsonData = await fetch("/rss-statistics/data/mentors.json").then((response) =>
+    const jsonData = await fetch("https://hapikus.github.io/rss-statistics/data/mentors.json").then((response) =>
       response.json()
     );
     this.mentorsJson = jsonData;

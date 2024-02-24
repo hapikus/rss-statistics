@@ -20,7 +20,7 @@ const About = () => {
         </div>
         <div>
           <b>Project Description:</b> A website offering detailed analytics and
-          data visualization for the JS FE 2023 Q1 course.
+          data visualization for the JS FE 2023 Q4 course.
         </div>
         <div>
           <b>Target Audience:</b> Students and mentors of the course.

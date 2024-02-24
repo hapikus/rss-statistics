@@ -11,8 +11,6 @@
       <change beforePath="$PROJECT_DIR$/../../public/data/tasks.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../public/data/tasks.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../public/data/tasksResults.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../public/data/tasksResults.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../public/data/tasksTag.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../public/data/tasksTag.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../components/global/PopoverBlocks.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/../components/global/PopoverBlocks.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../components/global/PopoverBlocks.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../components/global/PopoverBlocks.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../components/layout/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../components/layout/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/schedule.json" beforeDir="false" afterPath="$PROJECT_DIR$/schedule.json" afterDir="false" />
@@ -126,6 +124,10 @@
       <workItem from="1692179428729" duration="13000" />
       <workItem from="1692364989798" duration="54000" />
       <workItem from="1694087815082" duration="720000" />
+      <workItem from="1694354153353" duration="12000" />
+      <workItem from="1695375329870" duration="57000" />
+      <workItem from="1695819903798" duration="11000" />
+      <workItem from="1708776269695" duration="820000" />
     </task>
     <servers />
   </component>

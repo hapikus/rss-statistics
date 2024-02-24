@@ -144,8 +144,8 @@ const Layout: React.FC = () => {
             }}
           >
             <div className={styles.headerCont}>
-              <Title className={styles.title} level={2}>JSFE2023Q1</Title>
-              <div className={styles.lastUpdateText}>Last update: 07.09.23</div>
+              <Title className={styles.title} level={2}>JSFE2023Q4</Title>
+              <div className={styles.lastUpdateText}>Last update: 24.02.24</div>
             </div>
              
           </LayoutAntd.Header>
