@@ -1,7 +1,7 @@
 [
   [
     "self-study",
-    73
+    57
   ],
   [
     "test",
@@ -9,22 +9,22 @@
   ],
   [
     "coding",
-    18
+    14
   ],
   [
     "cross-check-submit",
-    14
-  ],
-  [
-    "cross-check-review",
-    14
-  ],
-  [
-    "lecture",
     10
   ],
   [
+    "cross-check-review",
+    10
+  ],
+  [
+    "lecture",
+    4
+  ],
+  [
     "interview",
-    3
+    1
   ]
 ]
